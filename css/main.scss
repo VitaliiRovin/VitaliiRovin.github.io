@@ -1,0 +1,26 @@
+//colors
+$white: #ffffff;
+$dark-green: #0f5a47;
+$blue: #61c4d9;
+$black: #0d0d0d;
+$gray: #f2f5f4;
+$dark-gray: #666666;
+$black-gray: #323232;
+
+//normalize
+@import "./layout/normalize.scss";
+
+
+//setups
+@import "./layout/base.scss";
+@import "./layout/fonts.scss";
+
+
+//blocks
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/btn.scss";
+@import "./blocks/why.scss";
+@import "./blocks/comments.scss";

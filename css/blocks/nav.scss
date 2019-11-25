@@ -1,0 +1,17 @@
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    padding-right: 27px;
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+.nav__link {
+    font-size: 18px;
+    color: $white;
+}

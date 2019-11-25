@@ -1,0 +1,20 @@
+.contacts__phone {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+
+    &:before {
+        content: "";
+        margin-right: 4px;
+        width: 12px;
+        height: 11px;
+        background: url('../../img/icons/phone_sprite.png') -42px -10px;
+    }
+
+    &:hover:before {
+        background: url('../../img/icons/phone_sprite.png') -10px -10px;
+    }
+
+}
