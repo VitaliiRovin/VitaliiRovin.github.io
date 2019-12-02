@@ -1,0 +1,51 @@
+.team__content {
+    @include flex;
+    flex-direction: column;
+
+    &>h2 {
+        font-size: 48px;
+        font-weight: bold;
+        color: $black;
+        text-transform: uppercase;
+    }
+}
+
+.team__list {
+    @include flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: -20px;
+}
+
+.team__item {
+    width: calc(100%/4 - 20px);
+    margin-left: 20px;
+}
+
+.team__member>h3 {
+    font-size: 21px;
+    font-weight: 500;
+    color: $black-gray;
+    text-align: center;
+}
+
+.team__desc {
+    font-size: 18px;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+
+    &--active {
+        height: auto;
+    }
+
+    &>h4 {
+        font-weight: normal;
+        color: $black-gray;
+    }
+
+    &>h5 {
+        font-weight: 300;
+        color: $dark-gray;
+    }
+}

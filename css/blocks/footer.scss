@@ -1,0 +1,23 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $white;
+}
+
+.footer__container {
+    padding: 20px 0;
+}
+
+.footer__address {
+    font-size: 21px;
+    font-weight: normal;
+    color: $black;
+}
+
+.footer__phone {
+    font-size: 21px;
+    font-weight: normal;
+    color: $dark-green;
+}

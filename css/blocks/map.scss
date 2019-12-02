@@ -1,0 +1,8 @@
+.map {
+    &::before {
+        content: "";
+        @include cover;
+        @include zero;
+        background-image: url(../../img/bg/map.png);
+    }
+}

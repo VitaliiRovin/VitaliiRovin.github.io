@@ -1,0 +1,25 @@
+.delivery {
+    font-size: 18px;
+    font-weight: normal;
+    color: $dark-green;
+
+    &::before {
+        content: "";
+        @include cover;
+        @include zero;
+        background-image: url(../../img/bg/form.png);
+        z-index: -10;
+    }
+
+    &>.container {
+        @include flex;
+        flex-direction: column;
+
+        &>h2 {
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 38px;
+        }
+    }
+}

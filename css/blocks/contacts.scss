@@ -1,8 +1,6 @@
 .contacts__phone {
+    @include flex;
     font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: $white;
 
     &:before {
