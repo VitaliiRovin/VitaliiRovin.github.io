@@ -1,5 +1,5 @@
 .delivery {
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: normal;
     color: $dark-green;
 
@@ -11,15 +11,15 @@
         z-index: -10;
     }
 
-    &>.container {
+    .container {
         @include flex;
         flex-direction: column;
 
-        &>h2 {
-            font-size: 48px;
+        h2 {
+            font-size: rem(48px);
             font-weight: bold;
             text-transform: uppercase;
-            margin-bottom: 38px;
+            margin-bottom: rem(38px);
         }
     }
 }

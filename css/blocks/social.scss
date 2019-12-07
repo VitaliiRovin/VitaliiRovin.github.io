@@ -1,0 +1,13 @@
+.social {
+    display: flex;
+}
+
+.social__item {
+    margin-right: rem(20px);
+}
+
+.social__icone {
+    @include flex;
+    width: rem(20px);
+    height: rem(20px);
+}

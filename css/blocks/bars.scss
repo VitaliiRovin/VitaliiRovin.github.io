@@ -1,0 +1,46 @@
+.bars__content {
+    @include flex;
+}
+
+.bars__desc {
+    h2 {
+        font-size: rem(36px);
+        font-weight: bold;
+        color: $black;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: rem(18px);
+        font-weight: normal;
+        color: $dark-gray;
+    }
+}
+
+.bars__col {
+    font-size: rem(18px);
+    color: $black-gray;
+
+    h3 {
+        font-weight: normal;
+    }
+
+    p {
+        font-weight: bold;
+    }
+}
+
+.bars__desc-add {
+    display: flex;
+}
+
+.bars__price {
+    display: flex;
+    align-items: center;
+
+    p {
+        font-size: rem(60px);
+        font-weight: 300;
+        color: $black;
+    }
+}

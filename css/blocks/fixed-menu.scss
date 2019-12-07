@@ -1,0 +1,29 @@
+.fixed-menu {
+    position: fixed;
+    top: rem(100px);
+    right: rem(60px);
+    z-index: 10;
+}
+
+.fixed-menu__dot {
+    width: rem(20px);
+    height: rem(20px);
+    border-radius: 50%;
+    display: block;
+    border: rem(1px) solid transparent;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        background-color: $white;
+        height: rem(6px);
+        width: rem(6px);
+        border-radius: 50%;
+        @include center;
+    }
+
+    &--active {
+        border: rem(1px) solid $white;
+    }
+}

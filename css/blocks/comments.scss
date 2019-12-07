@@ -7,10 +7,10 @@
         background-repeat: no-repeat;
         background-position: center;
         position: absolute;
-        top: 270px;
+        top: rem(270px);
         left: 0;
-        width: 200px;
-        height: 200px;
+        width: rem(200px);
+        height: rem(200px);
     }
 
     &:after {
@@ -19,49 +19,50 @@
         background-repeat: no-repeat;
         background-position: center;
         position: absolute;
-        top: 270px;
+        top: rem(270px);
         right: 0;
-        width: 200px;
-        height: 100px;
+        width: rem(200px);
+        height: rem(100px);
     }
 }
 
-.comments__content>h2 {
-    font-size: 48px;
-    font-weight: bold;
-    color: $black;
-    text-align: center;
-    margin-bottom: 26px;
+.comments__content {
+    h2 {
+        font-size: rem(48px);
+        font-weight: bold;
+        color: $black;
+        text-align: center;
+        margin-bottom: rem(26px);
+    }
 }
 
 .comments__box {
     @include cover;
     display: flex;
     background-image: url(../../img/bg/comments.png);
-    width: 940px;
-    padding: 50px 182px 35px 45px;
-    margin-bottom: 17px;
+    width: rem(940px);
+    padding: rem(50px) rem(182px) rem(35px) rem(45px);
+    margin-bottom: rem(17px);
 }
 
 .comments__desc {
-
-    &>h3 {
-        font-size: 30px;
+    h3 {
+        font-size: rem(30px);
         font-weight: 500;
         color: $black-gray;
-        margin-top: 8px;
-        margin-bottom: 18px;
+        margin-top: rem(8px);
+        margin-bottom: rem(18px);
     }
 
-    &>h4 {
-        font-size: 18px;
+    h4 {
+        font-size: rem(18px);
         color: $dark-gray;
-        margin-bottom: 27px;
+        margin-bottom: rem(27px);
         line-height: 1.25;
     }
 
-    &>h5 {
-        font-size: 18px;
+    h5 {
+        font-size: rem(18px);
         font-weight: 500;
         color: $dark-gray;
     }
@@ -69,36 +70,36 @@
 
 .comments__avatar-list {
     @include flex;
-    margin-bottom: 65px;
+    margin-bottom: rem(65px);
+}
 
-    &>.comments__avatar-item {
-        margin-right: 12px;
+.comments__avatar-item {
+    margin-right: rem(12px);
 
-        &:last-child {
-            margin-right: 0;
-        }
+    &:last-child {
+        margin-right: 0;
     }
 }
 
 .comments__pic {
-    margin-right: 19px;
+    margin-right: rem(19px);
 }
 
 .comments__photo {
-    width: 255px;
-    height: 260px;
+    width: rem(255px);
+    height: rem(260px);
     object-fit: cover;
 }
 
 .comments__icon {
-    border: solid 6px transparent;
-    height: 67px;
-    width: 67px;
+    border: solid rem(6px) transparent;
+    height: rem(67px);
+    width: rem(67px);
     border-radius: 50%;
     object-fit: cover;
     object-position: center center;
+}
 
-    &--active {
-        border: solid 6px $dark-green;
-    }
+.comments__icon--active {
+    border: solid rem(6px) $dark-green;
 }

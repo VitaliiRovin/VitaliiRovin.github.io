@@ -1,11 +1,16 @@
 .menu {
-    background-image: url(../../img/bg/menu-one.png);
     @include cover;
+    background-image: url(../../img/bg/menu-main.png);
+    background-color: black;
 
-    &>.container>h2 {
-        font-size: 48px;
+    h2 {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        font-size: rem(48px);
         font-weight: bold;
-        color: $black;
+        color: $white;
+        text-transform: uppercase;
     }
 }
 
@@ -13,23 +18,80 @@
     position: absolute;
     right: 0;
     top: 0;
+    bottom: 0;
     display: flex;
 }
 
 .menu__item {
-    width: 100px;
-    height: 100vh;
     display: flex;
-    align-items: flex-end;
 }
 
-.menu__text {
-    font-size: 36px;
-    font-weight: 500;
-    color: $black;
-    width: 100%;
-    height: 100%;
-    // white-space: nowrap;
-    // transform: rotate(-90deg) translateY(-50%);
-    // transform-origin: 0 0;
+.menu__item--active {
+
+    .menu__desc {
+        width: 50vw;
+    }
+}
+
+.menu__desc {
+    width: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    p {
+        font-size: rem(16px);
+        font-weight: normal;
+        line-height: 1.5;
+        color: $white;
+        padding: rem(50px) rem(20px);
+    }
+}
+
+.menu__link {
+    display: block;
+    width: rem(100px);
+    background-color: black;
+    position: relative;
+
+    h3 {
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        display: block;
+        font-size: rem(36px);
+        font-weight: 500;
+        color: $white;
+        white-space: nowrap;
+        transform: rotate(-90deg) translateY(-50%);
+        transform-origin: 0 0;
+    }
+}
+
+.menu__link--one {
+    background-image: url(../../img/bg/menu-one.png);
+    @include cover;
+}
+
+.menu__link--two {
+    background-image: url(../../img/bg/menu-two.png);
+    @include cover;
+}
+
+.menu__link--three {
+    background-image: url(../../img/bg/menu-three.png);
+    @include cover;
+}
+
+.menu__close {
+    position: absolute;
+    top: rem(60px);
+    right: rem(15px);
+    z-index: 20;
+    display: flex;
+}
+
+.menu__icone {
+    fill: $gray;
+    width: rem(18px);
+    height: rem(18px);
 }

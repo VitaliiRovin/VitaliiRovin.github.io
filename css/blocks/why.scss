@@ -3,7 +3,7 @@
     @include zero;
     background-image: url(../../img/bg/berry-three.png);
     background-repeat: no-repeat;
-    top: 270px;
+    top: rem(270px);
 }
 
 .why__content {
@@ -12,17 +12,18 @@
     align-items: center;
     position: relative;
 
-    &>h2 {
-        font-size: 48px;
+    h2 {
+        font-size: rem(48px);
         font-weight: bold;
         color: $black;
+        text-transform: uppercase;
     }
 
-    &>h3 {
-        font-size: 18px;
+    h3 {
+        font-size: rem(18px);
         color: $dark-gray;
         text-align: center;
-        margin-bottom: 53px;
+        margin-bottom: rem(53px);
         line-height: 1.2;
     }
 }
@@ -36,58 +37,45 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 78px;
+    margin-right: rem(78px);
 
     &:last-child {
         margin-right: 0;
     }
 
-    &>h3 {
-        font-size: 27px;
+    h3 {
+        font-size: rem(27px);
         font-weight: bold;
         color: $black;
-        margin-bottom: 14px;
+        margin-bottom: rem(14px);
     }
 
-    &>h4 {
+    h4 {
         text-align: center;
-        font-size: 18px;
+        font-size: rem(18px);
         font-weight: 300;
         color: $dark-gray;
         line-height: 1.2;
     }
 }
 
-.why__pic {
+.why__icone {
+    @include flex;
     background-color: $gray;
-    width: 125px;
-    height: 125px;
     border-radius: 50%;
-    position: relative;
-    margin-bottom: 28px;
+    width: rem(125px);
+    height: rem(125px);
+}
 
-    &::before {
-        content: "";
-        @include center;
-        display: block;
-        background-image: url('../../img/icons/why_sprites.png');
+.why__pic {
+    fill: none;
+    stroke: $icone-why;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+    width: rem(75px);
+    height: rem(75px);
+
+    &--sheet {
+        stroke-width: 0.6;
     }
-}
-
-.why__pic--useful::before {
-    width: 66px;
-    height: 69px;
-    background-position: -10px -10px;
-}
-
-.why__pic--tasty::before {
-    width: 70px;
-    height: 69px;
-    background-position: -96px -10px;
-}
-
-.why__pic--nutrit::before {
-    width: 75px;
-    height: 64px;
-    background-position: -186px -10px;
 }

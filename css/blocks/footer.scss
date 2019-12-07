@@ -7,17 +7,29 @@
 }
 
 .footer__container {
-    padding: 20px 0;
+    padding: rem(20px) 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer__address {
-    font-size: 21px;
+    font-size: rem(21px);
     font-weight: normal;
     color: $black;
 }
 
 .footer__phone {
-    font-size: 21px;
+    display: flex;
+    align-items: center;
+    font-size: rem(21px);
     font-weight: normal;
     color: $dark-green;
+}
+
+.footer__col--right {
+    @include flex;
+}
+
+.social__icone {
+    opacity: 0.3;
 }

@@ -1,0 +1,14 @@
+.hamburger-menu {
+    @include flex;
+    display: none;
+
+    @include tablets {
+        display: flex;
+    }
+}
+
+.hamburger-menu__icone {
+    width: rem(25px);
+    height: rem(25px);
+    fill: $white;
+}

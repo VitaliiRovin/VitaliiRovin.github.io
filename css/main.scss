@@ -7,6 +7,13 @@ $black: #0d0d0d;
 $gray: #f2f5f4;
 $dark-gray: #666666;
 $black-gray: #323232;
+$icone-promo: #b0f7ff;
+$icone-why: #2a2a29;
+
+// resolutions
+$phones: 480px;
+$tablets: 768px;
+$desktop: 1200px;
 
 //normalize
 @import "./layout/normalize.scss";
@@ -16,6 +23,7 @@ $black-gray: #323232;
 @import "./layout/base.scss";
 @import "./layout/fonts.scss";
 @import "./layout/mixin.scss";
+@import "./layout/media.scss";
 
 
 
@@ -34,3 +42,8 @@ $black-gray: #323232;
 @import "./blocks/option.scss";
 @import "./blocks/map.scss";
 @import "./blocks/footer.scss";
+@import "./blocks/bars.scss";
+@import "./blocks/social.scss";
+@import "./blocks/fixed-menu.scss";
+@import "./blocks/hamburger-menu.scss";
+
