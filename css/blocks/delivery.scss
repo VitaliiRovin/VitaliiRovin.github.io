@@ -5,15 +5,31 @@
 
     &::before {
         content: "";
-        @include cover;
-        @include zero;
         background-image: url(../../img/bg/form.png);
         z-index: -10;
+        
+        @include cover;
+        @include zero;
+    }
+
+    &:after {
+        content: "";
+        background-image: url(../../img/bg/berry-six.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        width: 195px;
+        height: 270px;
+        z-index: 10;
+
+        @include zero;
+        top: -125px;
+        left: auto;
     }
 
     .container {
-        @include flex;
         flex-direction: column;
+        
+        @include flex;
 
         h2 {
             font-size: rem(48px);

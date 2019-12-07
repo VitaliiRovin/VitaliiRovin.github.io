@@ -1,12 +1,13 @@
 .menu {
-    @include cover;
     background-image: url(../../img/bg/menu-main.png);
     background-color: black;
+
+    @include cover;
 
     h2 {
         position: absolute;
         top: 10%;
-        left: 10%;
+        left: 17%;
         font-size: rem(48px);
         font-weight: bold;
         color: $white;
@@ -15,11 +16,10 @@
 }
 
 .menu__list {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
     display: flex;
+
+    @include zero;
+    left: auto;
 }
 
 .menu__item {
@@ -58,7 +58,7 @@
         top: 95%;
         left: 50%;
         display: block;
-        font-size: rem(36px);
+        font-size: rem(48px);
         font-weight: 500;
         color: $white;
         white-space: nowrap;
@@ -69,16 +69,19 @@
 
 .menu__link--one {
     background-image: url(../../img/bg/menu-one.png);
+
     @include cover;
 }
 
 .menu__link--two {
     background-image: url(../../img/bg/menu-two.png);
+
     @include cover;
 }
 
 .menu__link--three {
     background-image: url(../../img/bg/menu-three.png);
+
     @include cover;
 }
 

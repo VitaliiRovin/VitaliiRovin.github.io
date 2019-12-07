@@ -1,6 +1,7 @@
 .hamburger-menu {
-    @include flex;
     display: none;
+    
+    @include flex;
 
     @include tablets {
         display: flex;

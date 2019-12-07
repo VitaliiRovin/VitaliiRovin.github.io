@@ -1,12 +1,11 @@
 .header {
     position: absolute;
-    width:100%;
+    width: 100%;
     padding-top: rem(20px);
     z-index: 1;
 }
 
 .header__container {
-    display: flex;
+    @include flex;
     justify-content: space-between;
-    align-items: center;
 }

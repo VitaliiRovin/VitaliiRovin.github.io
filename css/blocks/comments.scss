@@ -5,24 +5,29 @@
         content: "";
         background-image: url(../../img/bg/berry-two.png);
         background-repeat: no-repeat;
-        background-position: center;
-        position: absolute;
-        top: rem(270px);
-        left: 0;
-        width: rem(200px);
-        height: rem(200px);
+        background-size: auto;
+        width: 135px;
+        height: 320px;
+        z-index: 10;
+
+        @include zero;
+        bottom: -140px;
+        top: auto;
     }
 
     &:after {
         content: "";
         background-image: url(../../img/bg/berry-one.png);
+        background-size: auto;
         background-repeat: no-repeat;
-        background-position: center;
-        position: absolute;
-        top: rem(270px);
-        right: 0;
-        width: rem(200px);
-        height: rem(100px);
+        width: 160px;
+        height: 130px;
+        z-index: 10;
+
+        @include zero;
+        top: 50px;
+        right: 50px;
+        left: auto;
     }
 }
 
@@ -37,12 +42,13 @@
 }
 
 .comments__box {
-    @include cover;
     display: flex;
     background-image: url(../../img/bg/comments.png);
     width: rem(940px);
     padding: rem(50px) rem(182px) rem(35px) rem(45px);
     margin-bottom: rem(17px);
+    
+    @include cover;
 }
 
 .comments__desc {
@@ -69,8 +75,9 @@
 }
 
 .comments__avatar-list {
-    @include flex;
     margin-bottom: rem(65px);
+    
+    @include flex;
 }
 
 .comments__avatar-item {

@@ -27,12 +27,13 @@
 
     &::after {
         content: "";
-        @include center;
         width: rem(14px);
         height: rem(14px);
         background-color: $dark-green;
         border-radius: 50%;
         opacity: 0;
+        
+        @include center;
     }
 }
 
@@ -41,13 +42,14 @@
 }
 
 .option__checkbox-styler {
-    @include flex;
     height: rem(26px);
     width: rem(26px);
     background-color: $white;
     position: relative;
     margin-right: rem(8px);
     margin-bottom: rem(25px);
+    
+    @include flex;
 }
 
 .option__icone {

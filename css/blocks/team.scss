@@ -1,20 +1,42 @@
+.team {
+    position: relative;
+
+    &::after {
+        content: "";
+        background-image: url(../../img/bg/berry-five.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 115px;
+        height: 115px;
+        z-index: 10;
+
+        @include zero;
+        bottom: -45px;
+        left: 80px;
+        top: auto;
+    }
+}
+
 .team__content {
-    @include flex;
     flex-direction: column;
+    
+    @include flex;
 
     h2 {
         font-size: rem(48px);
         font-weight: bold;
         color: $black;
         text-transform: uppercase;
+        margin-bottom: 45px;
     }
 }
 
 .team__list {
-    @include flex;
-    align-items: flex-start;
     flex-wrap: wrap;
     margin-left: rem(-20px);
+    
+    @include flex;
+    align-items: flex-start;
 }
 
 .team__item {
@@ -61,4 +83,8 @@
     width: rem(15px);
     height: rem(15px);
     fill: $dark-green;
+}
+
+.team__avatar {
+    margin-bottom: 15px;
 }

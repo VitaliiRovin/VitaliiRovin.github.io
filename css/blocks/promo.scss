@@ -1,14 +1,21 @@
 .promo {
-    @include cover;
     background-image: url(../../img/bg/blue.png);
     position: relative;
+    
+    @include cover;
 
     &:before {
         content: "";
-        @include cover;
-        @include zero;
-        background-size: auto;
         background-image: url(../../img/bg/bars.png);
+        width: 600px;
+        height: 750px;
+        
+        @include zero;
+        right: 115px;
+        left: auto;
+
+        @include cover;
+        background-size: auto;
     }
 }
 
