@@ -6,13 +6,13 @@
         background-image: url(../../img/bg/berry-five.png);
         background-repeat: no-repeat;
         background-size: auto;
-        width: 115px;
-        height: 115px;
+        width: rem(115px);
+        height: rem(115px);
         z-index: 10;
 
         @include zero;
-        bottom: -45px;
-        left: 80px;
+        bottom: rem(-45px);
+        left: rem(80px);
         top: auto;
     }
 }
@@ -27,7 +27,7 @@
         font-weight: bold;
         color: $black;
         text-transform: uppercase;
-        margin-bottom: 45px;
+        margin-bottom: rem(45px);
     }
 }
 
@@ -86,5 +86,5 @@
 }
 
 .team__avatar {
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
 }

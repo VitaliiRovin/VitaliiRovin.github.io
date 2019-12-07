@@ -6,12 +6,12 @@
         background-image: url(../../img/bg/sheet-two.png);
         background-size: auto;
         background-repeat: no-repeat;
-        width: 190px;
-        height: 600px;
+        width: rem(190px);
+        height: rem(600px);
         z-index: 1;
 
         @include zero;
-        bottom: -240px;
+        bottom: rem(-240px);
         left: auto;
         top: auto;
     }
@@ -21,16 +21,16 @@
         background-image: url(../../img/bg/berry-four.png);
         background-size: auto;
         background-repeat: no-repeat;
-        width: 135px;
-        height: 130px;
+        width: rem(135px);
+        height: rem(130px);
         z-index: 10;
 
 
         @include zero;
-        bottom: -69px;
+        bottom: rem(-69px);
         left: auto;
         top: auto;
-        right: 14px;
+        right: rem(14px);
     }
 }
 
@@ -39,8 +39,8 @@
 }
 
 .bars__desc {
-    margin-left: 65px;
-    margin-right: 35px;
+    margin-left: rem(65px);
+    margin-right: rem(35px);
     line-height: 1.2;
 
     h2 {
@@ -60,7 +60,7 @@
 .bars__col {
     font-size: rem(18px);
     color: $black-gray;
-    margin-right: 36px;
+    margin-right: rem(36px);
 
 
     h3 {
@@ -74,7 +74,7 @@
 
 .bars__desc-add {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
 }
 
 .bars__price {
@@ -85,24 +85,24 @@
         font-size: rem(60px);
         font-weight: 300;
         color: $black;
-        margin-right: 30px;
+        margin-right: rem(30px);
     }
 }
 
 .bars__composition {
     flex-direction: column;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background-color: $bar-icone;
-    border-radius: 5px;
-    margin-bottom: 28px;
+    border-radius: rem(5px);
+    margin-bottom: rem(28px);
     
     @include flex;
 
     &::after {
         content: "состав";
         text-transform: uppercase;
-        font-size: 13px;
+        font-size: rem(13px);
         font-weight: 900;
         font-style: italic;
         color: $white;
@@ -110,8 +110,8 @@
 }
 
 .bars__icone {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 5px;
+    width: rem(50px);
+    height: rem(50px);
+    margin-bottom: rem(5px);
     fill: $white;
 }

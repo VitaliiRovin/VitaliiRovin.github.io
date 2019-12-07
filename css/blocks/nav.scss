@@ -1,14 +1,6 @@
 .nav__list {
-    display: flex;
-    align-items: center;
-}
-
-.nav__item {
-    padding-right: rem(27px);
-
-    &:last-child {
-        padding-right: 0;
-    }
+    @include flex;
+    justify-content: space-between;
 }
 
 .nav__link {

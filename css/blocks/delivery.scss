@@ -17,12 +17,12 @@
         background-image: url(../../img/bg/berry-six.png);
         background-size: auto;
         background-repeat: no-repeat;
-        width: 195px;
-        height: 270px;
+        width: rem(195px);
+        height: rem(270px);
         z-index: 10;
 
         @include zero;
-        top: -125px;
+        top: rem(-125px);
         left: auto;
     }
 

@@ -6,12 +6,12 @@
         background-image: url(../../img/bg/berry-two.png);
         background-repeat: no-repeat;
         background-size: auto;
-        width: 135px;
-        height: 320px;
+        width: rem(135px);
+        height: rem(320px);
         z-index: 10;
 
         @include zero;
-        bottom: -140px;
+        bottom: rem(-140px);
         top: auto;
     }
 
@@ -20,13 +20,13 @@
         background-image: url(../../img/bg/berry-one.png);
         background-size: auto;
         background-repeat: no-repeat;
-        width: 160px;
-        height: 130px;
+        width: rem(160px);
+        height: rem(130px);
         z-index: 10;
 
         @include zero;
-        top: 50px;
-        right: 50px;
+        top: rem(50px);
+        right: rem(50px);
         left: auto;
     }
 }

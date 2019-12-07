@@ -6,6 +6,16 @@
 }
 
 .header__container {
+    margin: 0 auto;
+    
     @include flex;
     justify-content: space-between;
+}
+
+.header__wrapper {
+    width: rem(634px);
+
+    @include laptop {
+        display: none;
+    }
 }

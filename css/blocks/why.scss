@@ -14,19 +14,15 @@
         content: "";
         background-image: url(../../img/bg/berry-three.png);
         background-repeat: no-repeat;
-        width: 350px;
-        height: 350px;
+        width: rem(350px);
+        height: rem(350px);
         z-index: 10;
 
         @include zero;
-        bottom: -140px;
+        bottom: rem(-140px);
         left: 0;
         top: auto;
     }
-}
-
-.why__info {
-    width: 100%;
 }
 
 .why__content {
@@ -40,6 +36,12 @@
         font-weight: bold;
         color: $black;
         text-transform: uppercase;
+        text-align: center;
+        line-height: 1.2;
+
+        @include tablets {
+            margin-bottom: rem(3px);
+        }
     }
 
     h3 {
@@ -48,13 +50,24 @@
         text-align: center;
         margin-bottom: rem(54px);
         line-height: 1.2;
+
+        @include tablets {
+            margin-bottom: rem(27px);
+        }
     }
 }
 
 .why__list {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-left: rem(-70px);
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        padding: 0 18%;
+    }
 }
 
 .why__item {
@@ -62,23 +75,20 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    width: calc(100% / 3 - 70px);
+    margin-left: rem(70px);
 
-    &::after {
-        content: "";
-        background-image: url(../../img/bg/circle.png);
-        width: 67px;
-        height: 21px;
-        position: absolute;
-        left: 100%;
-        top: 20%;
-    }
-
-    &::after:nth-child(3) {
-        content: none;
-    }
-
-    &:last-child {
-        margin-right: 0;
+    &:nth-child(1):after,
+    &:nth-child(2):after {
+        @include tablets-min {
+            content: "";
+            background-image: url(../../img/bg/circle.png);
+            width: rem(67px);
+            height: rem(21px);
+            position: absolute;
+            left: 100%;
+            top: 20%;
+        }
     }
 
     h3 {
@@ -86,6 +96,10 @@
         font-weight: bold;
         color: $black;
         margin-bottom: rem(14px);
+
+        @include tablets {
+            margin-bottom: rem(10px);
+        }
     }
 
     h4 {
@@ -95,6 +109,12 @@
         color: $dark-gray;
         line-height: 1.2;
     }
+
+    @include tablets {
+        margin-bottom: rem(21px);
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 .why__icone {
@@ -102,9 +122,13 @@
     border-radius: 50%;
     width: rem(125px);
     height: rem(125px);
-    margin-bottom: 30px;
-    
+    margin-bottom: rem(30px);
+
     @include flex;
+
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
 }
 
 .why__pic {

@@ -17,3 +17,9 @@
 .contacts__phone-icone--footer {
     fill: $dark-green;
 }
+
+.contacts--header {
+    @include laptop {
+        display: none;
+    }
+}
