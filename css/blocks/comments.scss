@@ -2,32 +2,36 @@
     position: relative;
 
     &:before {
-        content: "";
-        background-image: url(../../img/bg/berry-two.png);
-        background-repeat: no-repeat;
-        background-size: auto;
-        width: rem(135px);
-        height: rem(320px);
-        z-index: 10;
+        @include tablets-min {
+            content: "";
+            background-image: url(../../img/bg/berry-two.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            width: rem(135px);
+            height: rem(320px);
+            z-index: 10;
 
-        @include zero;
-        bottom: rem(-140px);
-        top: auto;
+            @include zero;
+            bottom: rem(-140px);
+            top: auto;
+        }
     }
 
     &:after {
-        content: "";
-        background-image: url(../../img/bg/berry-one.png);
-        background-size: auto;
-        background-repeat: no-repeat;
-        width: rem(160px);
-        height: rem(130px);
-        z-index: 10;
+        @include phones-min {
+            content: "";
+            background-image: url(../../img/bg/berry-one.png);
+            background-size: auto;
+            background-repeat: no-repeat;
+            width: rem(160px);
+            height: rem(130px);
+            z-index: 10;
 
-        @include zero;
-        top: rem(50px);
-        right: rem(50px);
-        left: auto;
+            @include zero;
+            top: rem(50px);
+            right: rem(50px);
+            left: auto;
+        }
     }
 }
 
@@ -38,17 +42,73 @@
         color: $black;
         text-align: center;
         margin-bottom: rem(26px);
+        text-transform: uppercase;
+        position: relative;
+        z-index: 10;
+
+        @include tablets {
+            margin-bottom: rem(40px);
+        }
+
+        @include phones {
+            font-size: rem(40px);
+            margin-bottom: rem(20px);
+        }
     }
 }
 
 .comments__box {
-    display: flex;
-    background-image: url(../../img/bg/comments.png);
-    width: rem(940px);
-    padding: rem(50px) rem(182px) rem(35px) rem(45px);
     margin-bottom: rem(17px);
-    
-    @include cover;
+    display: flex;
+    padding: rem(50px) 19% 3% 5%;
+    background-color: $gray-bg;
+    position: relative;
+
+    &::after {
+        @include tablets-min {
+            content: "";
+            background-image: url(../../img/bg/comments.png);
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: rem(127px);
+            height: rem(167px);
+        }
+    }
+
+    &::before {
+        content: "";
+        background-image: url(../../img/bg/elips.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 50%;
+        transform: translate(50%, -130%);
+        width: rem(90px);
+        height: rem(90px);
+        z-index: 1;
+
+        @include tablets {
+            transform: translate(50%, -150%);
+        }
+
+        @include phones {
+            transform: translate(50%, -135%);
+        }
+    }
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        padding: rem(65px) 5% 5%;
+        text-align: center;
+        margin: 0 17% rem(40px);
+    }
+
+    @include phones {
+        margin: 0 0 rem(35px);
+        padding: rem(55px) 5% 7%;
+    }
 }
 
 .comments__desc {
@@ -58,6 +118,10 @@
         color: $black-gray;
         margin-top: rem(8px);
         margin-bottom: rem(18px);
+
+        @include phones {
+            margin-bottom: rem(10px);
+        }
     }
 
     h4 {
@@ -76,37 +140,73 @@
 
 .comments__avatar-list {
     margin-bottom: rem(65px);
-    
+
     @include flex;
 }
 
 .comments__avatar-item {
-    margin-right: rem(12px);
+    @include tablets {
+        margin-right: rem(20px);
+    }
 
-    &:last-child {
-        margin-right: 0;
+    @include phones {
+        margin-right: rem(10px);
     }
 }
 
 .comments__pic {
     margin-right: rem(19px);
+
+    @include tablets {
+        margin-right: 0;
+        margin-bottom: rem(10px);
+    }
+
+    @include phones {
+        margin-bottom: 0;
+    }
 }
 
 .comments__photo {
     width: rem(255px);
     height: rem(260px);
     object-fit: cover;
+
+    @include tablets {
+        width: rem(200px);
+        height: rem(200px);
+    }
+
+    @include phones {
+        width: rem(120px);
+        height: rem(125px);
+    }
 }
 
 .comments__icon {
     border: solid rem(6px) transparent;
-    height: rem(67px);
-    width: rem(67px);
+    height: rem(80px);
+    width: rem(80px);
     border-radius: 50%;
     object-fit: cover;
     object-position: center center;
+
+    @include tablets {
+        border: solid rem(9px) transparent;
+        height: rem(100px);
+        width: rem(100px);
+    }
+
+    @include phones {
+        height: rem(85px);
+        width: rem(85px);
+    }
 }
 
 .comments__icon--active {
     border: solid rem(6px) $dark-green;
+
+    @include tablets {
+        border: solid rem(9px) $dark-green;
+    }
 }

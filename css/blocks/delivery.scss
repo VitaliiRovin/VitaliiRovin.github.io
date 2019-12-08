@@ -7,35 +7,47 @@
         content: "";
         background-image: url(../../img/bg/form.png);
         z-index: -10;
-        
+
         @include cover;
         @include zero;
     }
 
     &:after {
-        content: "";
-        background-image: url(../../img/bg/berry-six.png);
-        background-size: auto;
-        background-repeat: no-repeat;
-        width: rem(195px);
-        height: rem(270px);
-        z-index: 10;
+        @include tablets-min {
+            content: "";
+            background-image: url(../../img/bg/berry-six.png);
+            background-size: auto;
+            background-repeat: no-repeat;
+            width: rem(195px);
+            height: rem(270px);
+            z-index: 10;
 
-        @include zero;
-        top: rem(-125px);
-        left: auto;
+            @include zero;
+            top: rem(-125px);
+            left: auto;
+        }
     }
 
     .container {
         flex-direction: column;
         
         @include flex;
+    }
 
-        h2 {
-            font-size: rem(48px);
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: rem(38px);
+    h2 {
+        font-size: rem(48px);
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: rem(38px);
+        text-align: center;
+
+        @include laptop {
+            margin-bottom: rem(25px);
+        }
+
+        @include phones {
+            font-size: rem(40px);
+            margin-bottom: rem(20px)
         }
     }
 }

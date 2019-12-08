@@ -24,10 +24,8 @@
 
 
 
-
-
-@mixin laptop-min {
-    @media screen and (min-width: $laptop) {
+@mixin phones-min {
+    @media screen and (min-width: $phones) {
         @content;
     }
 }
@@ -37,3 +35,11 @@
         @content;
     }
 }
+
+@mixin laptop-min {
+    @media screen and (min-width: $laptop) {
+        @content;
+    }
+}
+
+

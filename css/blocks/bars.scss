@@ -2,40 +2,48 @@
     background-color: $gray-bg;
 
     &::after {
-        content: "";
-        background-image: url(../../img/bg/sheet-two.png);
-        background-size: auto;
-        background-repeat: no-repeat;
-        width: rem(190px);
-        height: rem(600px);
-        z-index: 1;
+        @include tablets-min {
+            content: "";
+            background-image: url(../../img/bg/sheet-two.png);
+            background-size: auto;
+            background-repeat: no-repeat;
+            width: rem(190px);
+            height: rem(600px);
+            z-index: 1;
 
-        @include zero;
-        bottom: rem(-240px);
-        left: auto;
-        top: auto;
+            @include zero;
+            bottom: rem(-240px);
+            left: auto;
+            top: auto;
+        }
     }
 
     &::before {
-        content: "";
-        background-image: url(../../img/bg/berry-four.png);
-        background-size: auto;
-        background-repeat: no-repeat;
-        width: rem(135px);
-        height: rem(130px);
-        z-index: 10;
+        @include phones-min {
+            content: "";
+            background-image: url(../../img/bg/berry-four.png);
+            background-size: auto;
+            background-repeat: no-repeat;
+            width: rem(135px);
+            height: rem(130px);
+            z-index: 10;
 
 
-        @include zero;
-        bottom: rem(-69px);
-        left: auto;
-        top: auto;
-        right: rem(14px);
+            @include zero;
+            bottom: rem(-69px);
+            left: auto;
+            top: auto;
+            right: rem(14px);
+        }
     }
 }
 
 .bars__content {
     @include flex;
+
+    @include laptop {
+        flex-direction: column;
+    }
 }
 
 .bars__desc {
@@ -48,12 +56,35 @@
         font-weight: bold;
         color: $black;
         text-transform: uppercase;
+        margin-bottom: rem(13px);
+
+        @include laptop {
+            font-size: 30px;
+            text-align: center;
+        }
     }
 
     p {
         font-size: rem(18px);
         font-weight: normal;
         color: $dark-gray;
+        margin-bottom: rem(35px);
+
+        @include laptop {
+            text-align: center;
+            max-width: rem(570px);
+        }
+
+        @include phones {
+            max-width: rem(390px);
+            margin-bottom: rem(20px);
+        }
+    }
+
+    @include laptop {
+        @include flex;
+        flex-direction: column;
+        margin: 0;
     }
 }
 
@@ -62,6 +93,9 @@
     color: $black-gray;
     margin-right: rem(36px);
 
+    &:last-child {
+        margin-right: 0;
+    }
 
     h3 {
         font-weight: normal;
@@ -69,12 +103,25 @@
 
     p {
         font-weight: bold;
+        text-align: left;
+    }
+
+    @include laptop {
+        margin-right: rem(55px);
     }
 }
 
-.bars__desc-add {
+.bars__add {
     display: flex;
-    margin-bottom: rem(30px);
+    margin-bottom: rem(25px);
+
+    p {
+        margin-bottom: 0;
+    }
+
+    @include laptop {
+        margin-bottom: rem(35px);
+    }
 }
 
 .bars__price {
@@ -86,6 +133,7 @@
         font-weight: 300;
         color: $black;
         margin-right: rem(30px);
+        margin-bottom: 0;
     }
 }
 
@@ -95,8 +143,8 @@
     height: rem(90px);
     background-color: $bar-icone;
     border-radius: rem(5px);
-    margin-bottom: rem(28px);
-    
+    margin-bottom: rem(30px);
+
     @include flex;
 
     &::after {
@@ -107,6 +155,12 @@
         font-style: italic;
         color: $white;
     }
+
+    @include laptop {
+        position: absolute;
+        top: 3%;
+        right: 3%;
+    }
 }
 
 .bars__icone {
@@ -114,4 +168,14 @@
     height: rem(50px);
     margin-bottom: rem(5px);
     fill: $white;
+}
+
+.bars__photo {
+    display: block;
+    max-width: rem(475px);
+
+    @include laptop {
+        max-width: rem(380px);
+        margin-bottom: rem(20px);
+    }
 }

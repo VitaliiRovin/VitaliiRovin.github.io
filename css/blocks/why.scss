@@ -1,27 +1,31 @@
 .why {
     &::after {
-        content: "";
-        background-image: url(../../img/bg/sheet-one.png);
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
+        @include phones-min {
+            content: "";
+            background-image: url(../../img/bg/sheet-one.png);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
 
-        @include zero;
-        top: rem(190px);
+            @include zero;
+            top: rem(190px);
+        }
     }
 
     &:before {
-        content: "";
-        background-image: url(../../img/bg/berry-three.png);
-        background-repeat: no-repeat;
-        width: rem(350px);
-        height: rem(350px);
-        z-index: 10;
+        @include phones-min {
+            content: "";
+            background-image: url(../../img/bg/berry-three.png);
+            background-repeat: no-repeat;
+            width: rem(350px);
+            height: rem(350px);
+            z-index: 10;
 
-        @include zero;
-        bottom: rem(-140px);
-        left: 0;
-        top: auto;
+            @include zero;
+            bottom: rem(-140px);
+            left: 0;
+            top: auto;
+        }
     }
 }
 
@@ -42,6 +46,10 @@
         @include tablets {
             margin-bottom: rem(3px);
         }
+
+        @include phones {
+            font-size: rem(40px);
+        }
     }
 
     h3 {
@@ -50,9 +58,14 @@
         text-align: center;
         margin-bottom: rem(54px);
         line-height: 1.2;
+        max-width: rem(410px);
 
         @include tablets {
             margin-bottom: rem(27px);
+        }
+
+        @include phones {
+            margin-bottom: rem(50px);
         }
     }
 }
@@ -67,6 +80,10 @@
         align-items: center;
         margin-left: 0;
         padding: 0 18%;
+    }
+
+    @include phones {
+        padding: 0;
     }
 }
 
@@ -100,6 +117,11 @@
         @include tablets {
             margin-bottom: rem(10px);
         }
+
+        @include phones {
+            text-align: left;
+            margin-bottom: rem(15px);
+        }
     }
 
     h4 {
@@ -108,6 +130,10 @@
         font-weight: 300;
         color: $dark-gray;
         line-height: 1.2;
+
+        @include phones {
+            text-align: left;
+        }
     }
 
     @include tablets {
@@ -115,19 +141,30 @@
         width: 100%;
         margin-left: 0;
     }
+
+    @include phones {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: rem(35px);
+    }
 }
 
 .why__icone {
     background-color: $gray;
     border-radius: 50%;
-    width: rem(125px);
-    height: rem(125px);
+    min-width: rem(125px);
+    min-height: rem(125px);
     margin-bottom: rem(30px);
 
     @include flex;
 
     @include tablets {
         margin-bottom: rem(20px);
+    }
+
+    @include phones {
+        margin-bottom: 0;
+        margin-right: rem(10px);
     }
 }
 

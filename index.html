@@ -66,29 +66,27 @@
                     <div class="promo__btn">
                         <a href="#delivery" class="btn">Заказать</a>
                     </div>
-                    <div class="promo__info">
-                        <ul class="promo__list">
-                            <li class="promo__item">
-                                <svg class="promo__icone promo__icone--sheet">
-                                    <use xlink:href="./sprite.svg#sheet"></use>
-                                </svg>
-                                <h3>100% натуральный продукт</h3>
-                            </li>
-                            <li class="promo__item">
-                                <svg class="promo__icone promo__icone--car">
-                                    <use xlink:href="./sprite.svg#car"></use>
-                                </svg>
-                                <h3>3-5 дней доставка по РФ</h3>
-                            </li>
-                            <li class="promo__item">
-                                <svg class="promo__icone promo__icone--tape">
-                                    <use xlink:href="./sprite.svg#tape"></use>
-                                </svg>
-                                <h3>Не портит фигуру</h3>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
+                <ul class="promo__list">
+                    <li class="promo__item">
+                        <svg class="promo__icone">
+                            <use xlink:href="./sprite.svg#sheet"></use>
+                        </svg>
+                        <h3>100% натуральный продукт</h3>
+                    </li>
+                    <li class="promo__item">
+                        <svg class="promo__icone">
+                            <use xlink:href="./sprite.svg#car"></use>
+                        </svg>
+                        <h3>3-5 дней доставка по РФ</h3>
+                    </li>
+                    <li class="promo__item">
+                        <svg class="promo__icone">
+                            <use xlink:href="./sprite.svg#tape"></use>
+                        </svg>
+                        <h3>Не портит фигуру</h3>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -96,7 +94,7 @@
         <div class="container">
             <div class="why__content">
                 <h2>Почему chocco?</h2>
-                <h3>В нашем мире все происходит очень быстро, поэтому мы<br>делаем батончики, которые удобно взять с
+                <h3>В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно взять с
                     собой.</h3>
                 <div class="why__info">
                     <ul class="why__list">
@@ -106,9 +104,11 @@
                                     <use xlink:href="./sprite.svg#sheet"></use>
                                 </svg>
                             </div>
-                            <h3>Полезно</h3>
-                            <h4>Натуральность - ключевое качество нашей продукции. Мы используем только природные
-                                ингредиенты.</h4>
+                            <div class="why__desc">
+                                <h3>Полезно</h3>
+                                <h4>Натуральность - ключевое качество нашей продукции. Мы используем только природные
+                                    ингредиенты.</h4>
+                            </div>
                         </li>
                         <li class="why__item">
                             <div class="why__icone">
@@ -116,9 +116,11 @@
                                     <use xlink:href="./sprite.svg#tasty"></use>
                                 </svg>
                             </div>
-                            <h3>Вкусно</h3>
-                            <h4>Нежный, ненавязчивый, изысканный – так клиенты описывают вкусовые качества наших
-                                батончиков.</h4>
+                            <div class="why__desc">
+                                <h3>Вкусно</h3>
+                                <h4>Нежный, ненавязчивый, изысканный – так клиенты описывают вкусовые качества наших
+                                    батончиков.</h4>
+                            </div>
                         </li>
                         <li class="why__item">
                             <div class="why__icone">
@@ -126,9 +128,11 @@
                                     <use xlink:href="./sprite.svg#nutrit"></use>
                                 </svg>
                             </div>
-                            <h3>Питательно</h3>
-                            <h4>Высокое содержание качественного белка, а также всех необходимых витаминов и
-                                минералов.</h4>
+                            <div class="why__desc">
+                                <h3>Питательно</h3>
+                                <h4>Высокое содержание качественного белка, а также всех необходимых витаминов и
+                                    минералов.</h4>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -151,7 +155,7 @@
                     <h2>Батончик "морские водоросли"</h2>
                     <p>Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят:
                         сухое молоко, заменитель сахара и какао бобы.</p>
-                    <div class="bars__desc-add">
+                    <div class="bars__add">
                         <div class="bars__col">
                             <h3>Калорийность</h3>
                             <p>120 ккал</p>
@@ -176,72 +180,69 @@
         <div class="container">
             <div class="team__content">
                 <h2>Команда</h2>
-                <div class="team__members">
-                    <ul class="team__list">
-                        <li class="team__item team__item--active">
-                            <div class="team__member">
-                                <img src="./img/content/boris.png" alt="Фото Борис Федорович" class="team__avatar">
-                                <div class="team__block">
-                                    <h3>Борис Федорович</h3>
-                                    <svg class="team__icone">
-                                        <use xlink:href="./sprite.svg#triangle"></use>
-                                    </svg>
-                                </div>
+                <ul class="team__list">
+                    <li class="team__item team__item--active">
+                        <div class="team__member">
+                            <img src="./img/content/boris.png" alt="Фото Борис Федорович" class="team__avatar">
+                            <div class="team__block">
+                                <h3>Борис Федорович</h3>
+                                <svg class="team__icone">
+                                    <use xlink:href="./sprite.svg#triangle"></use>
+                                </svg>
                             </div>
-                            <div class="team__desc">
-                                <h4>Главный технолог</h4>
-                                <h5>Отвечает за вкусовые качества и калорийность.</h5>
+                        </div>
+                        <div class="team__desc">
+                            <h4>Главный технолог</h4>
+                            <h5>Отвечает за вкусовые качества и калорийность.</h5>
+                        </div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__member">
+                            <img src="./img/content/alla.png" alt="Фото Алла Иванова" class="team__avatar">
+                            <div class="team__block">
+                                <h3>Алла Иванова</h3>
+                                <svg class="team__icone">
+                                    <use xlink:href="./sprite.svg#triangle"></use>
+                                </svg>
                             </div>
-                        </li>
-                        <li class="team__item">
-                            <div class="team__member">
-                                <img src="./img/content/alla.png" alt="Фото Алла Иванова" class="team__avatar">
-                                <div class="team__block">
-                                    <h3>Алла Иванова</h3>
-                                    <svg class="team__icone">
-                                        <use xlink:href="./sprite.svg#triangle"></use>
-                                    </svg>
-                                </div>
+                        </div>
+                        <div class="team__desc">
+                            <h4>Специалист по упаковке</h4>
+                            <h5>Автор запоминающегося стиля наших батончиков.</h5>
+                        </div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__member">
+                            <img src="./img/content/kirill.png" alt="Фото Кирилл Матросов" class="team__avatar">
+                            <div class="team__block">
+                                <h3>Кирилл Матросов</h3>
+                                <svg class="team__icone">
+                                    <use xlink:href="./sprite.svg#triangle"></use>
+                                </svg>
                             </div>
-                            <div class="team__desc">
-                                <h4>Специалист по упаковке</h4>
-                                <h5>Автор запоминающегося стиля наших батончиков.</h5>
+                        </div>
+                        <div class="team__desc">
+                            <h4>Оператор</h4>
+                            <h5>С радостью поможет подобрать батончики и оформить заказ.</h5>
+                        </div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__member">
+                            <img src="./img/content/milla.png" alt="Фото Мила Рыжкова" class="team__avatar">
+                            <div class="team__block">
+                                <h3>Мила Рыжкова</h3>
+                                <svg class="team__icone">
+                                    <use xlink:href="./sprite.svg#triangle"></use>
+                                </svg>
                             </div>
-                        </li>
-                        <li class="team__item">
-                            <div class="team__member">
-                                <img src="./img/content/kirill.png" alt="Фото Кирилл Матросов" class="team__avatar">
-                                <div class="team__block">
-                                    <h3>Кирилл Матросов</h3>
-                                    <svg class="team__icone">
-                                        <use xlink:href="./sprite.svg#triangle"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="team__desc">
-                                <h4>Оператор</h4>
-                                <h5>С радостью поможет подобрать батончики и оформить заказ.</h5>
-                            </div>
-                        </li>
-                        <li class="team__item">
-                            <div class="team__member">
-                                <img src="./img/content/milla.png" alt="Фото Мила Рыжкова" class="team__avatar">
-                                <div class="team__block">
-                                    <h3>Мила Рыжкова</h3>
-                                    <svg class="team__icone">
-                                        <use xlink:href="./sprite.svg#triangle"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="team__desc">
-                                <h4>PR, маркетинг</h4>
-                                <h5>По всем вопросам сотрудничества и рекламы писать только Миле. </h5>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                        <div class="team__desc">
+                            <h4>PR, маркетинг</h4>
+                            <h5>По всем вопросам сотрудничества и рекламы писать только Миле. </h5>
+                        </div>
+                    </li>
+                </ul>
             </div>
-
         </div>
     </section>
     <section class="section menu" id="menu">
@@ -254,7 +255,7 @@
             </div>
             <div class="menu__content">
                 <ul class="menu__list">
-                    <li class="menu__item menu__item--active">
+                    <li class="menu__item">
                         <a href="#" class="menu__link menu__link--one">
                             <h3>Батончики с молоком</h3>
                         </a>
@@ -267,7 +268,7 @@
                         </div>
                         <a href="#" class="menu__close"></a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item menu__item--active">
                         <a href="#" class="menu__link menu__link--two">
                             <h3>С мёдом и фруктами</h3>
                         </a>
@@ -377,7 +378,7 @@
                             <textarea class="form__input"></textarea>
                         </label>
                     </div>
-                    <div class="form__row">
+                    <div class="form__row form__row--option">
                         <label class="option">
                             <input class="option__radio" type="radio" name="delivery"></input>
                             <span class="option__radio-styler"></span>
@@ -389,7 +390,7 @@
                             <span class="option__title">Оплата по карте</span>
                         </label>
                     </div>
-                    <div class="form__row">
+                    <div class="form__row form__row--option">
                         <label class="option">
                             <input class="option__checkbox" type="checkbox"></input>
                             <span class="option__checkbox-styler">
@@ -400,7 +401,7 @@
                             <span class="option__title">Не перезванивать</span>
                         </label>
                     </div>
-                    <div class="form__row">
+                    <div class="form__row form__row--option">
                         <button type="submit" class="btn btn--submit">Заказать</button>
                         <button type="reset" class="btn btn--clean">Очистить</button>
                     </div>

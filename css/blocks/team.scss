@@ -2,24 +2,26 @@
     position: relative;
 
     &::after {
-        content: "";
-        background-image: url(../../img/bg/berry-five.png);
-        background-repeat: no-repeat;
-        background-size: auto;
-        width: rem(115px);
-        height: rem(115px);
-        z-index: 10;
+        @include phones-min {
+            content: "";
+            background-image: url(../../img/bg/berry-five.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            width: rem(115px);
+            height: rem(115px);
+            z-index: 10;
 
-        @include zero;
-        bottom: rem(-45px);
-        left: rem(80px);
-        top: auto;
+            @include zero;
+            bottom: rem(-45px);
+            left: rem(80px);
+            top: auto;
+        }
     }
 }
 
 .team__content {
     flex-direction: column;
-    
+
     @include flex;
 
     h2 {
@@ -28,13 +30,23 @@
         color: $black;
         text-transform: uppercase;
         margin-bottom: rem(45px);
+
+        @include laptop {
+            margin-bottom: rem(30px);
+        }
+
+        @include phones {
+            font-size: rem(40px);
+            margin-bottom: rem(35px);
+        }
     }
 }
 
 .team__list {
     flex-wrap: wrap;
     margin-left: rem(-20px);
-    
+    width: auto;
+
     @include flex;
     align-items: flex-start;
 }
@@ -42,6 +54,14 @@
 .team__item {
     width: calc(100%/4 - 20px);
     margin-left: rem(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include laptop {
+        width: calc(100%/2 - 20px);
+        margin-bottom: rem(30px);
+    }
 }
 
 .team__block {
@@ -61,13 +81,14 @@
     text-align: center;
     height: 0;
     overflow: hidden;
+    max-width: rem(220px);
 
     h4 {
         font-weight: normal;
         color: $black-gray;
     }
 
-    h5 {
+    p {
         font-weight: 300;
         color: $dark-gray;
     }
@@ -87,4 +108,24 @@
 
 .team__avatar {
     margin-bottom: rem(15px);
+    width: rem(220px);
+    height: rem(290px);
+    object-fit: cover;
+
+    @include laptop {
+        margin-bottom: rem(20px);
+    }
+
+    @include phones {
+        width: rem(145px);
+        height: rem(185px);
+        margin-bottom: rem(10px);
+    }
+}
+
+.team__member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 220px;
 }

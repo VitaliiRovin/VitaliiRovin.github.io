@@ -1,6 +1,6 @@
 .footer {
     background-color: $white;
-    
+
     @include zero;
     top: auto;
 }
@@ -9,6 +9,13 @@
     padding: rem(20px) 0;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+
+    @include phones {
+        align-items: center;
+        flex-direction: column;
+
+    }
 }
 
 .footer__address {
@@ -27,8 +34,20 @@
 
 .footer__col--right {
     @include flex;
+
+    @include phones {
+        margin-top: rem(10px);
+    }
 }
 
 .social__icone {
     opacity: 0.3;
+}
+
+.footer__col {
+    @include phones {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
