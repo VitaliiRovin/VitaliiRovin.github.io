@@ -8,6 +8,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
@@ -45,7 +46,7 @@
                 </svg>
                 <a href="tel:+78009039090" class="contacts__phone">8 800 903 90 90</a>
             </address>
-            <a class="hamburger-menu">
+            <a href="#" class="hamburger-menu">
                 <svg class="hamburger-menu__icone">
                     <use xlink:href="./sprite.svg#hamburger-menu"></use>
                 </svg>
@@ -57,7 +58,7 @@
         <div class="container">
             <div class="promo__container">
                 <picture>
-                    <source media="(max-width:992px)" srcset="./img/bg/bars.png">
+                    <source media="(max-width:991px)" srcset="./img/bg/bars.png">
                     <img src="" alt="" class="promo__pic">
                 </picture>
                 <div class="promo__content">
@@ -180,68 +181,72 @@
         <div class="container">
             <div class="team__content">
                 <h2>Команда</h2>
-                <ul class="team__list">
-                    <li class="team__item team__item--active">
-                        <div class="team__member">
-                            <img src="./img/content/boris.png" alt="Фото Борис Федорович" class="team__avatar">
-                            <div class="team__block">
-                                <h3>Борис Федорович</h3>
-                                <svg class="team__icone">
-                                    <use xlink:href="./sprite.svg#triangle"></use>
-                                </svg>
+                <div class="team__list">
+                    <div class="team__col">
+                        <div class="team__item team__item--active">
+                            <div class="team__member">
+                                <img src="./img/content/boris.png" alt="Фото Борис Федорович" class="team__avatar">
+                                <div class="team__block">
+                                    <h3>Борис Федорович</h3>
+                                    <svg class="team__icone">
+                                        <use xlink:href="./sprite.svg#triangle"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="team__desc">
+                                <h4>Главный технолог</h4>
+                                <h5>Отвечает за вкусовые качества и калорийность.</h5>
                             </div>
                         </div>
-                        <div class="team__desc">
-                            <h4>Главный технолог</h4>
-                            <h5>Отвечает за вкусовые качества и калорийность.</h5>
-                        </div>
-                    </li>
-                    <li class="team__item">
-                        <div class="team__member">
-                            <img src="./img/content/alla.png" alt="Фото Алла Иванова" class="team__avatar">
-                            <div class="team__block">
-                                <h3>Алла Иванова</h3>
-                                <svg class="team__icone">
-                                    <use xlink:href="./sprite.svg#triangle"></use>
-                                </svg>
+                        <div class="team__item">
+                            <div class="team__member">
+                                <img src="./img/content/alla.png" alt="Фото Алла Иванова" class="team__avatar">
+                                <div class="team__block">
+                                    <h3>Алла Иванова</h3>
+                                    <svg class="team__icone">
+                                        <use xlink:href="./sprite.svg#triangle"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="team__desc">
+                                <h4>Специалист по упаковке</h4>
+                                <h5>Автор запоминающегося стиля наших батончиков.</h5>
                             </div>
                         </div>
-                        <div class="team__desc">
-                            <h4>Специалист по упаковке</h4>
-                            <h5>Автор запоминающегося стиля наших батончиков.</h5>
-                        </div>
-                    </li>
-                    <li class="team__item">
-                        <div class="team__member">
-                            <img src="./img/content/kirill.png" alt="Фото Кирилл Матросов" class="team__avatar">
-                            <div class="team__block">
-                                <h3>Кирилл Матросов</h3>
-                                <svg class="team__icone">
-                                    <use xlink:href="./sprite.svg#triangle"></use>
-                                </svg>
+                    </div>
+                    <div class="team__col">
+                        <div class="team__item">
+                            <div class="team__member">
+                                <img src="./img/content/kirill.png" alt="Фото Кирилл Матросов" class="team__avatar">
+                                <div class="team__block">
+                                    <h3>Кирилл Матросов</h3>
+                                    <svg class="team__icone">
+                                        <use xlink:href="./sprite.svg#triangle"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="team__desc">
+                                <h4>Оператор</h4>
+                                <h5>С радостью поможет подобрать батончики и оформить заказ.</h5>
                             </div>
                         </div>
-                        <div class="team__desc">
-                            <h4>Оператор</h4>
-                            <h5>С радостью поможет подобрать батончики и оформить заказ.</h5>
-                        </div>
-                    </li>
-                    <li class="team__item">
-                        <div class="team__member">
-                            <img src="./img/content/milla.png" alt="Фото Мила Рыжкова" class="team__avatar">
-                            <div class="team__block">
-                                <h3>Мила Рыжкова</h3>
-                                <svg class="team__icone">
-                                    <use xlink:href="./sprite.svg#triangle"></use>
-                                </svg>
+                        <div class="team__item">
+                            <div class="team__member">
+                                <img src="./img/content/milla.png" alt="Фото Мила Рыжкова" class="team__avatar">
+                                <div class="team__block">
+                                    <h3>Мила Рыжкова</h3>
+                                    <svg class="team__icone">
+                                        <use xlink:href="./sprite.svg#triangle"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="team__desc">
+                                <h4>PR, маркетинг</h4>
+                                <h5>По всем вопросам сотрудничества и рекламы писать только Миле. </h5>
                             </div>
                         </div>
-                        <div class="team__desc">
-                            <h4>PR, маркетинг</h4>
-                            <h5>По всем вопросам сотрудничества и рекламы писать только Миле. </h5>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -256,9 +261,9 @@
             <div class="menu__content">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="#" class="menu__link menu__link--one">
+                        <div class="menu__link menu__link--one">
                             <h3>Батончики с молоком</h3>
-                        </a>
+                        </div>
                         <div class="menu__desc">
                             <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и
                                 вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и
@@ -269,9 +274,9 @@
                         <a href="#" class="menu__close"></a>
                     </li>
                     <li class="menu__item menu__item--active">
-                        <a href="#" class="menu__link menu__link--two">
+                        <div class="menu__link menu__link--two">
                             <h3>С мёдом и фруктами</h3>
-                        </a>
+                        </div>
                         <div class="menu__desc">
                             <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и
                                 вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и
@@ -282,9 +287,9 @@
                         <a href="#" class="menu__close"></a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link menu__link--three">
+                        <div class="menu__link menu__link--three">
                             <h3>Дикие ягоды</h3>
-                        </a>
+                        </div>
                         <div class="menu__desc">
                             <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и
                                 вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и
@@ -486,6 +491,40 @@
             <a class="fixed-menu__dot" href="#map"></a>
         </li>
     </ul>
+
+    <div class="full-screen-menu">
+        <div class="menu__close full-screen-menu__close">
+            <svg class="menu__icone">
+                <use xlink:href="./sprite.svg#close"></use>
+            </svg>
+        </div>
+        <ul class="full-screen-menu__list">
+            <li class="full-screen-menu__item">
+                <a href="#about" class="full-screen-menu__link">О нас</a>
+            </li>
+            <li class="full-screen-menu__item">
+                <a href="#bars" class="full-screen-menu__link">Батончики</a>
+            </li>
+            <li class="full-screen-menu__item">
+                <a href="#team" class="full-screen-menu__link">Команда</a>
+            </li>
+            <li class="full-screen-menu__item">
+                <a href="#menu" class="full-screen-menu__link">Меню</a>
+            </li>
+            <li class="full-screen-menu__item">
+                <a href="#reviews" class="full-screen-menu__link">Отзывы</a>
+            </li>
+            <li class="full-screen-menu__item">
+                <a href="#how" class="full-screen-menu__link">Как мы работаем</a>
+            </li>
+            <li class="full-screen-menu__item">
+                <a href="#map" class="full-screen-menu__link">Контакты</a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="index.js">
+    </script>
 </body>
 
 </html>

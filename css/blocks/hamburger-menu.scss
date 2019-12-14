@@ -1,7 +1,6 @@
 .hamburger-menu {
     display: none;
     
-    
     @include laptop {
         @include flex;
     }

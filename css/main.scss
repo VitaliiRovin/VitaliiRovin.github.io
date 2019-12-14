@@ -11,9 +11,10 @@ $icone-promo: #b0f7ff;
 $icone-why: #2a2a29;
 $gray-bg: #f8faf9;
 $bar-icone: #00accf;
+$full-screen-menu:#2f3234;
 
 // resolutions
-$phones: 500px;
+$phones: 520px;
 $tablets: 768px;
 $laptop: 992px;
 
@@ -48,4 +49,5 @@ $laptop: 992px;
 @import "./blocks/social.scss";
 @import "./blocks/fixed-menu.scss";
 @import "./blocks/hamburger-menu.scss";
+@import "./blocks/full-screen-menu.scss";
 

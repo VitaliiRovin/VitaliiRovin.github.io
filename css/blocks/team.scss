@@ -45,22 +45,29 @@
 .team__list {
     flex-wrap: wrap;
     margin-left: rem(-20px);
-    width: auto;
 
     @include flex;
     align-items: flex-start;
+
+    @include phones {
+        margin: 0;
+    }
+}
+
+.team__col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .team__item {
-    width: calc(100%/4 - 20px);
+    max-width: rem(220px);
     margin-left: rem(20px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: rem(20px);
 
-    @include laptop {
-        width: calc(100%/2 - 20px);
-        margin-bottom: rem(30px);
+    @include phones {
+        max-width: rem(180px);
+        margin-left: 0;
     }
 }
 
@@ -81,7 +88,6 @@
     text-align: center;
     height: 0;
     overflow: hidden;
-    max-width: rem(220px);
 
     h4 {
         font-weight: normal;
