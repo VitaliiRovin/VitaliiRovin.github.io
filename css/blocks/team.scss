@@ -104,6 +104,10 @@
     .team__desc {
         height: auto;
     }
+
+    .team__icone {
+        transform: rotate(180deg);
+    }
 }
 
 .team__icone {

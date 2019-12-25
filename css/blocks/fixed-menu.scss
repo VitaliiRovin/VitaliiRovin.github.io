@@ -1,7 +1,7 @@
 .fixed-menu {
     position: fixed;
     top: rem(100px);
-    right: rem(60px);
+    right: 3%;
     z-index: 10;
 
     @include laptop {

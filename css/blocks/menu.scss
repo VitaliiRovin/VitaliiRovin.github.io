@@ -31,6 +31,7 @@
 }
 
 .menu__item--active {
+    position: relative;
 
     .menu__desc {
         width: 40vw;
@@ -39,6 +40,18 @@
             width: calc(100% - 100px);
         }
     }
+
+    .menu__close {
+        position: absolute;
+        top: rem(20px);
+        right: rem(20px);
+        z-index: 20;
+        display: flex;
+    }
+}
+
+.menu__close {
+    display: none;
 }
 
 .menu__desc {
@@ -95,14 +108,6 @@
     background-image: url(../../img/bg/menu-three.png);
 
     @include cover;
-}
-
-.menu__close {
-    position: absolute;
-    top: rem(40px);
-    right: rem(40px);
-    z-index: 20;
-    display: flex;
 }
 
 .menu__icone {

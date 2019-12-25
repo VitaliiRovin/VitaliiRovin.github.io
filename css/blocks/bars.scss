@@ -1,5 +1,6 @@
 .bars {
     background-color: $gray-bg;
+    position: relative;
 
     &::after {
         @include tablets-min {
@@ -39,6 +40,10 @@
 }
 
 .bars__content {
+    display: none;
+}
+
+.bars__content--active {
     @include flex;
 
     @include laptop {
@@ -143,7 +148,6 @@
     height: rem(90px);
     background-color: $bar-icone;
     border-radius: rem(5px);
-    margin-bottom: rem(30px);
 
     @include flex;
 
@@ -178,4 +182,64 @@
         max-width: rem(380px);
         margin-bottom: rem(20px);
     }
+}
+
+.bars__add-composition-icone {
+    margin-right: rem(25px);
+    width: rem(35px);
+    height: rem(35px);
+    fill: $black;
+}
+
+.bars__block-composition {
+    display: flex;
+    position: relative;
+    margin-bottom: rem(30px);
+}
+
+.bars__add-composition {
+    padding: 7% 7%;
+    min-width: rem(270px);
+    background-color: rgba($white, 0.95);
+    border-radius: rem(5px);
+    position: absolute;
+    left: 90px;
+    display: none;
+}
+
+.bars__add-composition--active {
+    display: block;
+}
+
+.bars__add-composition-item {
+    margin-bottom: rem(15px);
+    display: flex;
+    flex-direction: row;
+}
+
+.bars__add-composition-block {
+    flex: 1;
+
+    @include flex;
+    justify-content: space-between;
+}
+
+.bars__slider-icone {
+    filter: invert(1);
+    position: absolute;
+
+    &--left {
+        left: 3%;
+        top: 50%;
+    }
+
+    &--right {
+        transform: rotate(-180deg);
+        right: 3%;
+        top: 50%;
+    }
+}
+
+.bars__slider-icone--active {
+    filter: invert(0);
 }

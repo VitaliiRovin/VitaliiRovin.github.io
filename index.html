@@ -142,38 +142,188 @@
     </section>
     <section class="section bars" id="bars">
         <div class="container">
-            <div class="bars__slider bars__slider--left">
-                <a href="#" class="bars__link"></a>
+            <div class="bars__slider">
+                <img src="./img/icons/pointer.png" alt="листать в лево"
+                    class="bars__slider-icone bars__slider-icone--left">
             </div>
-            <div class="bars__content">
-                <img src="./img/bg/bars-two.png" alt="Фото товара" class="bars__photo">
-                <div class="bars__desc">
-                    <div class="bars__composition">
-                        <svg class="bars__icone">
-                            <use xlink:href="./sprite.svg#chocolate-bar"></use>
-                        </svg>
-                    </div>
-                    <h2>Батончик "морские водоросли"</h2>
-                    <p>Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят:
-                        сухое молоко, заменитель сахара и какао бобы.</p>
-                    <div class="bars__add">
-                        <div class="bars__col">
-                            <h3>Калорийность</h3>
-                            <p>120 ккал</p>
+            <ul class="bars__list">
+                <li class="bars__content bars__content--active">
+                    <img src="./img/bg/bars-two.png" alt="Фото товара" class="bars__photo">
+                    <div class="bars__desc">
+                        <div class="bars__block-composition">
+                            <div class="bars__composition">
+                                <svg class="bars__icone">
+                                    <use xlink:href="./sprite.svg#chocolate-bar"></use>
+                                </svg>
+                            </div>
+                            <div class="bars__add-composition">
+                                <ul class="bars__add-composition-list">
+                                    <li class="bars__add-composition-item">
+                                        <svg class="bars__add-composition-icone">
+                                            <use xlink:href="./sprite.svg#oat"></use>
+                                        </svg>
+                                        <div class="bars__add-composition-block">
+                                            <span class="bars__add-composition-name">Овёс</span>
+                                            <span class="bars__add-composition-weight">25г</span>
+                                        </div>
+                                    </li>
+                                    <li class="bars__add-composition-item"><svg class="bars__add-composition-icone">
+                                            <use xlink:href="./sprite.svg#seaweed"></use>
+                                        </svg>
+                                        <div class="bars__add-composition-block">
+                                            <span class="bars__add-composition-name">Мор. водоросли</span>
+                                            <span class="bars__add-composition-weight">15г</span>
+                                        </div>
+                                    </li>
+                                    <li class="bars__add-composition-item"><svg class="bars__add-composition-icone">
+                                            <use xlink:href="./sprite.svg#almond"></use>
+                                        </svg>
+                                        <div class="bars__add-composition-block">
+                                            <span class="bars__add-composition-name">Миндаль</span>
+                                            <span class="bars__add-composition-weight">20г</span>
+                                        </div>
+                                    </li>
+                                    <li class="bars__add-composition-item"><svg class="bars__add-composition-icone">
+                                            <use xlink:href="./sprite.svg#milk"></use>
+                                        </svg>
+                                        <div class="bars__add-composition-block">
+                                            <span class="bars__add-composition-name">Сухое молоко</span>
+                                            <span class="bars__add-composition-weight">10г</span>
+                                        </div>
+                                    </li>
+                                    <li class="bars__add-composition-item"><svg class="bars__add-composition-icone">
+                                            <use xlink:href="./sprite.svg#seeds"></use>
+                                        </svg>
+                                        <div class="bars__add-composition-block">
+                                            <span class="bars__add-composition-name">Тыкв. семечки</span>
+                                            <span class="bars__add-composition-weight">20г</span>
+                                        </div>
+                                    </li>
+                                    <li class="bars__add-composition-item"><svg class="bars__add-composition-icone">
+                                            <use xlink:href="./sprite.svg#honey"></use>
+                                        </svg>
+                                        <div class="bars__add-composition-block">
+                                            <span class="bars__add-composition-name">Зам. сахара</span>
+                                            <span class="bars__add-composition-weight">4г</span>
+                                        </div>
+                                    </li>
+                                    <li class="bars__add-composition-item"><svg class="bars__add-composition-icone">
+                                            <use xlink:href="./sprite.svg#beans"></use>
+                                        </svg>
+                                        <div class="bars__add-composition-block">
+                                            <span class="bars__add-composition-name">Какао бобы</span>
+                                            <span class="bars__add-composition-weight">4г</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="bars__col">
-                            <h3>Вес</h3>
-                            <p>98 грамм</p>
+                        <h2>Батончик "морские водоросли"</h2>
+                        <p>Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также
+                            входят:
+                            сухое молоко, заменитель сахара и какао бобы.</p>
+                        <div class="bars__add">
+                            <div class="bars__col">
+                                <h3>Калорийность</h3>
+                                <p>120 ккал</p>
+                            </div>
+                            <div class="bars__col">
+                                <h3>Вес</h3>
+                                <p>98 грамм</p>
+                            </div>
+                        </div>
+                        <div class="bars__price">
+                            <p>140 &#8381;</p>
+                            <a href="#" class="btn btn--submit">Заказать</a>
                         </div>
                     </div>
-                    <div class="bars__price">
-                        <p>140 &#8381;</p>
-                        <a href="#" class="btn btn--submit">Заказать</a>
+                </li>
+                <li class="bars__content">
+                    <img src="./img/bg/bars-three.png" alt="Фото товара" class="bars__photo">
+                    <div class="bars__desc">
+                        <div class="bars__block-composition">
+                            <div class="bars__composition">
+                                <svg class="bars__icone">
+                                    <use xlink:href="./sprite.svg#chocolate-bar"></use>
+                                </svg>
+                            </div>
+                            <div class="bars__add-composition">
+                                <ul class="bars__add-composition-list">
+                                    <li class="bars__add-composition-item">
+                                        <svg class="bars__add-composition-icone">
+                                            <use xlink:href="./sprite.svg#grape"></use>
+                                        </svg>
+                                        <div class="bars__add-composition-block">
+                                            <span class="bars__add-composition-name">Виноград</span>
+                                            <span class="bars__add-composition-weight">25г</span>
+                                        </div>
+                                    </li>
+                                    <li class="bars__add-composition-item"><svg class="bars__add-composition-icone">
+                                            <use xlink:href="./sprite.svg#nut"></use>
+                                        </svg>
+                                        <div class="bars__add-composition-block">
+                                            <span class="bars__add-composition-name">Гретский орех</span>
+                                            <span class="bars__add-composition-weight">32г</span>
+                                        </div>
+                                    </li>
+                                    <li class="bars__add-composition-item"><svg class="bars__add-composition-icone">
+                                            <use xlink:href="./sprite.svg#almond"></use>
+                                        </svg>
+                                        <div class="bars__add-composition-block">
+                                            <span class="bars__add-composition-name">Кунжутное семя</span>
+                                            <span class="bars__add-composition-weight">20г</span>
+                                        </div>
+                                    </li>
+                                    <li class="bars__add-composition-item"><svg class="bars__add-composition-icone">
+                                            <use xlink:href="./sprite.svg#milk"></use>
+                                        </svg>
+                                        <div class="bars__add-composition-block">
+                                            <span class="bars__add-composition-name">Сухое молоко</span>
+                                            <span class="bars__add-composition-weight">10г</span>
+                                        </div>
+                                    </li>
+                                    <li class="bars__add-composition-item"><svg class="bars__add-composition-icone">
+                                            <use xlink:href="./sprite.svg#honey"></use>
+                                        </svg>
+                                        <div class="bars__add-composition-block">
+                                            <span class="bars__add-composition-name">Зам. сахара</span>
+                                            <span class="bars__add-composition-weight">4г</span>
+                                        </div>
+                                    </li>
+                                    <li class="bars__add-composition-item"><svg class="bars__add-composition-icone">
+                                            <use xlink:href="./sprite.svg#beans"></use>
+                                        </svg>
+                                        <div class="bars__add-composition-block">
+                                            <span class="bars__add-composition-name">Какао бобы</span>
+                                            <span class="bars__add-composition-weight">4г</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>Батончик "гранола виноград"</h2>
+                        <p>Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое
+                            молоко, заменитель сахара и какао бобы.</p>
+                        <div class="bars__add">
+                            <div class="bars__col">
+                                <h3>Калорийность</h3>
+                                <p>110 ккал</p>
+                            </div>
+                            <div class="bars__col">
+                                <h3>Вес</h3>
+                                <p>95 грамм</p>
+                            </div>
+                        </div>
+                        <div class="bars__price">
+                            <p>140 &#8381;</p>
+                            <a href="#" class="btn btn--submit">Заказать</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="bars__slider bars__slider--right">
-                <a href="#" class="bars__link"></a>
+                </li>
+            </ul>
+            <div class="bars__slider">
+                <img src="./img/icons/pointer.png" alt="листать в право"
+                    class="bars__slider-icone bars__slider-icone--right">
             </div>
         </div>
     </section>
@@ -183,7 +333,7 @@
                 <h2>Команда</h2>
                 <div class="team__list">
                     <div class="team__col">
-                        <div class="team__item team__item--active">
+                        <div class="team__item">
                             <div class="team__member">
                                 <img src="./img/content/boris.png" alt="Фото Борис Федорович" class="team__avatar">
                                 <div class="team__block">
@@ -253,11 +403,6 @@
     <section class="section menu" id="menu">
         <div class="container">
             <h2>Меню</h2>
-            <div class="menu__close">
-                <svg class="menu__icone">
-                    <use xlink:href="./sprite.svg#close"></use>
-                </svg>
-            </div>
             <div class="menu__content">
                 <ul class="menu__list">
                     <li class="menu__item">
@@ -271,9 +416,13 @@
                                 Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы,
                                 кстати, бабулю поздравить с днём Победы.</p>
                         </div>
-                        <a href="#" class="menu__close"></a>
+                        <a href="#" class="menu__close menu__close--trigger">
+                            <svg class="menu__icone">
+                                <use xlink:href="./sprite.svg#close"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="menu__item menu__item--active">
+                    <li class="menu__item">
                         <div class="menu__link menu__link--two">
                             <h3>С мёдом и фруктами</h3>
                         </div>
@@ -284,7 +433,11 @@
                                 Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы,
                                 кстати, бабулю поздравить с днём Победы.</p>
                         </div>
-                        <a href="#" class="menu__close"></a>
+                        <a href="#" class="menu__close menu__close--trigger">
+                            <svg class="menu__icone">
+                                <use xlink:href="./sprite.svg#close"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="menu__item">
                         <div class="menu__link menu__link--three">
@@ -297,7 +450,11 @@
                                 Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы,
                                 кстати, бабулю поздравить с днём Победы.</p>
                         </div>
-                        <a href="#" class="menu__close"></a>
+                        <a href="#" class="menu__close menu__close--trigger">
+                            <svg class="menu__icone">
+                                <use xlink:href="./sprite.svg#close"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -305,20 +462,52 @@
     </section>
     <section class="section comments" id="reviews">
         <div class="container">
-            <div class="comments__content">
+            <divW class="comments__content">
                 <h2>Отзывы</h2>
-                <div class="comments__box">
-                    <div class="comments__pic">
-                        <img src="./img/content/avatar_one.png" alt="Фото аватара" class="comments__photo">
-                    </div>
-                    <div class="comments__desc">
-                        <h3>Лучший перекус</h3>
-                        <h4>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу
-                            за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А
-                            батончик – он всегда под рукой. Это приятно и удобно</h4>
-                        <h5>Алёна Хмельницкая</h5>
-                    </div>
-                </div>
+                <ul class="comments__box-list">
+                    <li class="comments__box comments__box--active">
+                        <div class="comments__pic">
+                            <img src="./img/content/avatar_one.png" alt="Фото аватара" class="comments__photo">
+                        </div>
+                        <div class="comments__desc">
+                            <h3>Лучший перекус</h3>
+                            <h4>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня
+                                сижу
+                                за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А
+                                батончик – он всегда под рукой. Это приятно и удобно</h4>
+                            <h5>Алёна Хмельницкая</h5>
+                        </div>
+                    </li>
+                    <li class="comments__box">
+                        <div class="comments__pic">
+                            <img src="./img/content/avatar_two.png" alt="Фото аватара" class="comments__photo">
+                        </div>
+                        <div class="comments__desc">
+                            <h3>Лучшие батончики премиум уровня</h3>
+                            <h4>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами,
+                                однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в
+                                руке. Ну
+                                и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё
+                                один.
+                                Но это скорее плюс, чем минус.</h4>
+                            <h5>Мария Орлова</h5>
+                        </div>
+                    </li>
+                    <li class="comments__box">
+                        <div class="comments__pic">
+                            <img src="./img/content/avatar_three.png" alt="Фото аватара" class="comments__photo">
+                        </div>
+                        <div class="comments__desc">
+                            <h3>Идеально подходят для спортсменов</h3>
+                            <h4>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома
+                                ещё
+                                нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане.
+                                Спасибо
+                                производителю за этот качественный и экологичный продукт.</h4>
+                            <h5>Вадим Грачев</h5>
+                        </div>
+                    </li>
+                </ul>
                 <div class="comments__avatar">
                     <ul class="comments__avatar-list">
                         <li class="comments__avatar-item">
@@ -333,7 +522,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+        </div>
         </div>
     </section>
     <section class="section delivery" id="delivery">
