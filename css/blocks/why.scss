@@ -73,7 +73,6 @@
 .why__list {
     display: flex;
     justify-content: space-between;
-    margin-left: rem(-70px);
 
     @include tablets {
         flex-direction: column;
@@ -93,7 +92,6 @@
     align-items: center;
     position: relative;
     width: calc(100% / 3 - 70px);
-    margin-left: rem(70px);
 
     &:nth-child(1):after,
     &:nth-child(2):after {
@@ -103,7 +101,7 @@
             width: rem(67px);
             height: rem(21px);
             position: absolute;
-            left: 100%;
+            left: 108%;
             top: 20%;
         }
     }
@@ -178,5 +176,11 @@
 
     &--sheet {
         stroke-width: 0.6;
+    }
+}
+
+.why__desc {
+    h3 {
+        max-width: 1000px;
     }
 }

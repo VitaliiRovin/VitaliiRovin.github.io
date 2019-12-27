@@ -13,30 +13,30 @@
 
 <body>
     <header class="header">
-        <div class="container header__container">
+        <div class="header__container container">
             <img class="logo" src="./img/icons/logo.png" alt="Логотип">
             <div class="header__wrapper">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">О нас</a>
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#about" class="header__link">О нас</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#bars" class="nav__link">Батончики</a>
+                    <li class="header__item">
+                        <a href="#bars" class="header__link">Батончики</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#team" class="nav__link">Команда</a>
+                    <li class="header__item">
+                        <a href="#team" class="header__link">Команда</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#menu" class="nav__link">Меню</a>
+                    <li class="header__item">
+                        <a href="#menu" class="header__link">Меню</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#reviews" class="nav__link">Отзывы</a>
+                    <li class="header__item">
+                        <a href="#reviews" class="header__link">Отзывы</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#how" class="nav__link">Как мы работаем</a>
+                    <li class="header__item">
+                        <a href="#how" class="header__link">Как мы работаем</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#map" class="nav__link">Контакты</a>
+                    <li class="header__item">
+                        <a href="#map" class="header__link">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -62,8 +62,8 @@
                     <img src="" alt="" class="promo__pic">
                 </picture>
                 <div class="promo__content">
-                    <h1>Натуральные<br>шоколадные<br>батончики</h1>
-                    <h2>Наши батончики идеально подходят для<br>тех, кто следит за своим здоровьем</h2>
+                    <h1>Натуральные шоколадные батончики</h1>
+                    <h2>Наши батончики идеально подходят для тех, кто следит за своим здоровьем</h2>
                     <div class="promo__btn">
                         <a href="#delivery" class="btn">Заказать</a>
                     </div>
@@ -142,12 +142,12 @@
     </section>
     <section class="section bars" id="bars">
         <div class="container">
-            <div class="bars__slider">
+            <div class="bars__slider" id="left">
                 <img src="./img/icons/pointer.png" alt="листать в лево"
                     class="bars__slider-icone bars__slider-icone--left">
             </div>
             <ul class="bars__list">
-                <li class="bars__content bars__content--active">
+                <li class="bars__content">
                     <img src="./img/bg/bars-two.png" alt="Фото товара" class="bars__photo">
                     <div class="bars__desc">
                         <div class="bars__block-composition">
@@ -234,7 +234,7 @@
                         </div>
                         <div class="bars__price">
                             <p>140 &#8381;</p>
-                            <a href="#" class="btn btn--submit">Заказать</a>
+                            <a href="#delivery" class="btn btn--submit">Заказать</a>
                         </div>
                     </div>
                 </li>
@@ -316,12 +316,12 @@
                         </div>
                         <div class="bars__price">
                             <p>140 &#8381;</p>
-                            <a href="#" class="btn btn--submit">Заказать</a>
+                            <a href="#delivery" class="btn btn--submit">Заказать</a>
                         </div>
                     </div>
                 </li>
             </ul>
-            <div class="bars__slider">
+            <div class="bars__slider" id="right">
                 <img src="./img/icons/pointer.png" alt="листать в право"
                     class="bars__slider-icone bars__slider-icone--right">
             </div>
@@ -406,7 +406,7 @@
             <div class="menu__content">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <div class="menu__link menu__link--one">
+                        <div class="menu__link menu__link--milk">
                             <h3>Батончики с молоком</h3>
                         </div>
                         <div class="menu__desc">
@@ -416,14 +416,14 @@
                                 Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы,
                                 кстати, бабулю поздравить с днём Победы.</p>
                         </div>
-                        <a href="#" class="menu__close menu__close--trigger">
+                        <div class="menu__close menu__close--trigger">
                             <svg class="menu__icone">
                                 <use xlink:href="./sprite.svg#close"></use>
                             </svg>
-                        </a>
+                        </div>
                     </li>
                     <li class="menu__item">
-                        <div class="menu__link menu__link--two">
+                        <div class="menu__link menu__link--honey">
                             <h3>С мёдом и фруктами</h3>
                         </div>
                         <div class="menu__desc">
@@ -433,14 +433,14 @@
                                 Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы,
                                 кстати, бабулю поздравить с днём Победы.</p>
                         </div>
-                        <a href="#" class="menu__close menu__close--trigger">
+                        <div class="menu__close menu__close--trigger">
                             <svg class="menu__icone">
                                 <use xlink:href="./sprite.svg#close"></use>
                             </svg>
-                        </a>
+                        </div>
                     </li>
                     <li class="menu__item">
-                        <div class="menu__link menu__link--three">
+                        <div class="menu__link menu__link--berry">
                             <h3>Дикие ягоды</h3>
                         </div>
                         <div class="menu__desc">
@@ -450,11 +450,11 @@
                                 Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы,
                                 кстати, бабулю поздравить с днём Победы.</p>
                         </div>
-                        <a href="#" class="menu__close menu__close--trigger">
+                        <div class="menu__close menu__close--trigger">
                             <svg class="menu__icone">
                                 <use xlink:href="./sprite.svg#close"></use>
                             </svg>
-                        </a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -510,9 +510,8 @@
                 </ul>
                 <div class="comments__avatar">
                     <ul class="comments__avatar-list">
-                        <li class="comments__avatar-item">
-                            <img src="./img/content/avatar_one.png" alt="Мини аватар"
-                                class="comments__icon comments__icon--active">
+                        <li class="comments__avatar-item comments__avatar-item--active">
+                            <img src="./img/content/avatar_one.png" alt="Мини аватар" class="comments__icon">
                         </li>
                         <li class="comments__avatar-item">
                             <img src="./img/content/avatar_two.png" alt="Мини аватар" class="comments__icon">
@@ -528,51 +527,51 @@
     <section class="section delivery" id="delivery">
         <div class="container">
             <h2>Закажите доставку</h2>
-            <form action="" class="form">
+            <form action="" class="form" id="myForm">
                 <div class="form__col">
                     <div class="form__row">
                         <label for="" class="form__block">
                             <span class="form__text">Имя</span>
-                            <input type="text" class="form__input">
+                            <input type="text" class="form__input" name="name" required>
                         </label>
                         <label for="" class="form__block">
                             <span class="form__text">Телефон</span>
-                            <input type="text" class="form__input">
+                            <input type="text" class="form__input" name="tel" required>
                         </label>
                     </div>
                     <div class="form__row">
                         <label for="" class="form__block">
                             <span class="form__text">Улица</span>
-                            <input type="text" class="form__input">
+                            <input type="text" class="form__input" name="street" required>
                         </label>
                     </div>
                     <div class="form__row">
                         <label for="" class="form__block">
                             <span class="form__text">Дом</span>
-                            <input type="text" class="form__input">
+                            <input type="text" class="form__input" name="house" required>
                         </label>
                         <label for="" class="form__block">
                             <span class="form__text">Корпус</span>
-                            <input type="text" class="form__input">
+                            <input type="text" class="form__input" name="housing">
                         </label>
                         <label for="" class="form__block">
                             <span class="form__text">Квартира</span>
-                            <input type="text" class="form__input">
+                            <input type="text" class="form__input" name="apartment" required>
                         </label>
                         <label for="" class="form__block">
                             <span class="form__text">Этаж</span>
-                            <input type="text" class="form__input">
+                            <input type="text" class="form__input" name="floor">
                         </label>
                     </div>
                 </div>
                 <div class="form__col">
-                    <div class="form__row">
+                    <div class="form__comment">
                         <label for="" class="form__textarea">
                             <span class="form__text">Комментарий</span>
-                            <textarea class="form__input"></textarea>
+                            <textarea class="form__input" name="comment"></textarea>
                         </label>
                     </div>
-                    <div class="form__row form__row--option">
+                    <div class="form__option">
                         <label class="option">
                             <input class="option__radio" type="radio" name="delivery"></input>
                             <span class="option__radio-styler"></span>
@@ -584,9 +583,9 @@
                             <span class="option__title">Оплата по карте</span>
                         </label>
                     </div>
-                    <div class="form__row form__row--option">
+                    <div class="form__option">
                         <label class="option">
-                            <input class="option__checkbox" type="checkbox"></input>
+                            <input class="option__checkbox" type="checkbox" name="callback"></input>
                             <span class="option__checkbox-styler">
                                 <svg class="option__icone">
                                     <use xlink:href="./sprite.svg#cheack"></use>
@@ -595,8 +594,8 @@
                             <span class="option__title">Не перезванивать</span>
                         </label>
                     </div>
-                    <div class="form__row form__row--option">
-                        <button type="submit" class="btn btn--submit">Заказать</button>
+                    <div class="form__option">
+                        <button id="sendBtn" type="submit" class="btn btn--submit">Заказать</button>
                         <button type="reset" class="btn btn--clean">Очистить</button>
                     </div>
                 </div>
@@ -612,7 +611,7 @@
                         <svg class="contacts__phone-icone contacts__phone-icone--footer">
                             <use xlink:href="./sprite.svg#phone"></use>
                         </svg>
-                        <h3>8 800 903 90 90</h3>
+                        <div class="footer__tel">8 800 903 90 90</div>
                     </a>
                 </div>
                 <div class="footer__col footer__col--right">

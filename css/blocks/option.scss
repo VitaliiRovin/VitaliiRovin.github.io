@@ -1,17 +1,8 @@
 .option {
-    margin-right: rem(23px);
-    margin-bottom: rem(5px);
     display: flex;
 
-    &:last-child {
-        @include laptop {
-            margin-right: 0;
-        }
-    }
-
-    @include laptop {
-        margin-right: rem(23px);
-        margin-bottom: 0;
+    &+.option {
+        margin-left: rem(23px);
     }
 }
 
@@ -46,14 +37,6 @@
 
         @include center;
     }
-
-    @include laptop {
-        margin-bottom: rem(25px);
-    }
-
-    @include laptop {
-        margin-bottom: rem(20px);
-    }
 }
 
 .option__checkbox {
@@ -66,17 +49,8 @@
     background-color: $white;
     position: relative;
     margin-right: rem(8px);
-    margin-bottom: rem(25px);
 
     @include flex;
-
-    @include laptop {
-        margin-bottom: rem(42px);
-    }
-
-    @include phones {
-        margin-bottom: rem(30px);
-    }
 }
 
 .option__icone {

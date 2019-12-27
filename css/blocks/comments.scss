@@ -59,7 +59,6 @@
 
 .comments__box {
     display: none;
-    margin-bottom: rem(17px);
     padding: rem(50px) 19% 3% 5%;
     background-color: $gray-bg;
     position: relative;
@@ -111,6 +110,10 @@
     }
 }
 
+.comments__box-list {
+    margin-bottom: rem(17px);
+}
+
 .comments__box--active {
     display: flex;
 }
@@ -142,9 +145,11 @@
     }
 }
 
-.comments__avatar-list {
+.comments__avatar {
     margin-bottom: rem(65px);
+}
 
+.comments__avatar-list {
     @include flex;
 }
 
@@ -155,6 +160,16 @@
 
     @include phones {
         margin-right: rem(10px);
+    }
+}
+
+.comments__avatar-item--active {
+    .comments__icon {
+        border: solid rem(6px) $dark-green;
+
+        @include tablets {
+            border: solid rem(9px) $dark-green;
+        }
     }
 }
 
@@ -204,13 +219,5 @@
     @include phones {
         height: rem(85px);
         width: rem(85px);
-    }
-}
-
-.comments__icon--active {
-    border: solid rem(6px) $dark-green;
-
-    @include tablets {
-        border: solid rem(9px) $dark-green;
     }
 }

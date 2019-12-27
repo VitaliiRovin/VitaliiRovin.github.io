@@ -1,11 +1,9 @@
 .form {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: rem(-20px);
 
     @include laptop {
         margin: 0 10%;
+        flex-direction: column;
     }
 
     @include phones {
@@ -23,37 +21,71 @@
     @include laptop {
         width: 100%;
     }
+
+    &+.form__col {
+        margin-left: rem(16px);
+
+        @include laptop {
+            margin-left: 0;
+            margin-top: rem(20px);
+        }
+
+        @include phones {
+            margin-top: rem(15px);
+        }
+    }
 }
 
 .form__block {
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin-left: rem(20px);
 
-    &:first-child {
-        margin-left: 0;
+    &+.form__block {
+        margin-left: rem(20px);
     }
 }
 
 .form__row {
     display: flex;
     flex-direction: row;
-    margin-left: rem(20px);
 
     @include laptop {
         margin: 0;
     }
+
+    &+.form__row {
+        margin-top: rem(15px);
+    }
 }
 
-.form__row--option {
-    &:first-child {
-        margin-bottom: 50px;
-    }
+.form__option {
+    display: flex;
 
     @include laptop {
         @include flex;
     }
+
+    &:nth-child(2) {
+        margin-bottom: rem(8px);
+
+        @include laptop {
+            margin-bottom: rem(30px);
+        }
+
+        @include phones {
+            margin-bottom: rem(20px);
+        }
+    }
+
+    &:nth-child(3) {
+        margin-bottom: rem(37px);
+
+        @include phones {
+            margin-bottom: rem(30px);
+        }
+    }
+
 }
 
 .form__textarea {
@@ -61,20 +93,11 @@
     flex-direction: column;
     flex: 1;
 
-    @include laptop {
-        margin-bottom: rem(35px);
-    }
-
-    @include phones {
-        margin-bottom: rem(5px);
-    }
-
     .form__input {
         width: 100%;
         height: rem(180px);
         resize: none;
         line-height: 1.2;
-        margin-bottom: rem(21px);
 
         @include phones {
             height: rem(105px);
@@ -91,7 +114,6 @@
     color: $black;
     padding: rem(16px) rem(11px);
     outline: none;
-    margin-bottom: rem(15px);
 
     &:focus {
         border: rem(3px) solid $green;
@@ -99,5 +121,17 @@
 
     @include phones {
         padding: rem(12px) rem(11px);
+    }
+}
+
+.form__comment {
+    margin-bottom: rem(18px);
+
+    @include laptop {
+        margin-bottom: rem(55px);
+    }
+
+    @include phones {
+        margin-bottom: rem(30px);
     }
 }

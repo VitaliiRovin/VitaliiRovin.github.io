@@ -1,9 +1,0 @@
-.nav__list {
-    @include flex;
-    justify-content: space-between;
-}
-
-.nav__link {
-    font-size: rem(18px);
-    color: $white;
-}

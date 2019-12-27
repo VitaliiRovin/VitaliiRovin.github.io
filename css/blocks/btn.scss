@@ -5,6 +5,7 @@
     background-color: $white;
     padding: rem(16px) rem(35px);
     border-radius: rem(40px);
+    display: block;
 
     &:focus {
         outline: none;

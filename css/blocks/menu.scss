@@ -33,6 +33,10 @@
 .menu__item--active {
     position: relative;
 
+    @include laptop {
+        position: static;
+    }
+
     .menu__desc {
         width: 40vw;
 
@@ -92,19 +96,19 @@
     }
 }
 
-.menu__link--one {
+.menu__link--milk {
     background-image: url(../../img/bg/menu-one.png);
 
     @include cover;
 }
 
-.menu__link--two {
+.menu__link--honey {
     background-image: url(../../img/bg/menu-two.png);
 
     @include cover;
 }
 
-.menu__link--three {
+.menu__link--berry {
     background-image: url(../../img/bg/menu-three.png);
 
     @include cover;
