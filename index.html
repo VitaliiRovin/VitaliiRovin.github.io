@@ -142,7 +142,7 @@
     </section>
     <section class="section bars" id="bars">
         <div class="container">
-            <div class="bars__slider" id="left">
+            <div class="bars__slider bars__slider--active" id="left">
                 <img src="./img/icons/pointer.png" alt="листать в лево"
                     class="bars__slider-icone bars__slider-icone--left">
             </div>
@@ -337,7 +337,7 @@
                             <div class="team__member">
                                 <img src="./img/content/boris.png" alt="Фото Борис Федорович" class="team__avatar">
                                 <div class="team__block">
-                                    <h3>Борис Федорович</h3>
+                                    <span class="team__name">Борис Федорович</span>
                                     <svg class="team__icone">
                                         <use xlink:href="./sprite.svg#triangle"></use>
                                     </svg>
@@ -352,7 +352,7 @@
                             <div class="team__member">
                                 <img src="./img/content/alla.png" alt="Фото Алла Иванова" class="team__avatar">
                                 <div class="team__block">
-                                    <h3>Алла Иванова</h3>
+                                    <span class="team__name">Алла Иванова</span>
                                     <svg class="team__icone">
                                         <use xlink:href="./sprite.svg#triangle"></use>
                                     </svg>
@@ -369,7 +369,7 @@
                             <div class="team__member">
                                 <img src="./img/content/kirill.png" alt="Фото Кирилл Матросов" class="team__avatar">
                                 <div class="team__block">
-                                    <h3>Кирилл Матросов</h3>
+                                    <span class="team__name">Кирилл Матросов</span>
                                     <svg class="team__icone">
                                         <use xlink:href="./sprite.svg#triangle"></use>
                                     </svg>
@@ -384,7 +384,7 @@
                             <div class="team__member">
                                 <img src="./img/content/milla.png" alt="Фото Мила Рыжкова" class="team__avatar">
                                 <div class="team__block">
-                                    <h3>Мила Рыжкова</h3>
+                                    <span class="team__name">Мила Рыжкова</span>
                                     <svg class="team__icone">
                                         <use xlink:href="./sprite.svg#triangle"></use>
                                     </svg>
@@ -410,7 +410,8 @@
                             <h3>Батончики с молоком</h3>
                         </div>
                         <div class="menu__desc">
-                            <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и
+                            <p>Батончики с молоком. </br>Рекомендуем употреблять батончики вместе с кокосовым или
+                                миндальным молоком. Так и
                                 вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и
                                 радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало.
                                 Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы,
@@ -427,7 +428,8 @@
                             <h3>С мёдом и фруктами</h3>
                         </div>
                         <div class="menu__desc">
-                            <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и
+                            <p>С мёдом и фруктами. </br>Рекомендуем употреблять батончики вместе с кокосовым или
+                                миндальным молоком. Так и
                                 вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и
                                 радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало.
                                 Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы,
@@ -444,7 +446,8 @@
                             <h3>Дикие ягоды</h3>
                         </div>
                         <div class="menu__desc">
-                            <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и
+                            <p>Дикие ягоды. </br>Рекомендуем употреблять батончики вместе с кокосовым или миндальным
+                                молоком. Так и
                                 вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и
                                 радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало.
                                 Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы,
@@ -462,7 +465,7 @@
     </section>
     <section class="section comments" id="reviews">
         <div class="container">
-            <divW class="comments__content">
+            <div class="comments__content">
                 <h2>Отзывы</h2>
                 <ul class="comments__box-list">
                     <li class="comments__box comments__box--active">
@@ -498,7 +501,7 @@
                             <img src="./img/content/avatar_three.png" alt="Фото аватара" class="comments__photo">
                         </div>
                         <div class="comments__desc">
-                            <h3>Идеально подходят для спортсменов</h3>
+                            <h3>Идеально для спортсменов</h3>
                             <h4>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома
                                 ещё
                                 нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане.
@@ -508,20 +511,18 @@
                         </div>
                     </li>
                 </ul>
-                <div class="comments__avatar">
-                    <ul class="comments__avatar-list">
-                        <li class="comments__avatar-item comments__avatar-item--active">
-                            <img src="./img/content/avatar_one.png" alt="Мини аватар" class="comments__icon">
-                        </li>
-                        <li class="comments__avatar-item">
-                            <img src="./img/content/avatar_two.png" alt="Мини аватар" class="comments__icon">
-                        </li>
-                        <li class="comments__avatar-item">
-                            <img src="./img/content/avatar_three.png" alt="Мини аватар" class="comments__icon">
-                        </li>
-                    </ul>
-                </div>
-        </div>
+                <ul class="comments__avatar-list">
+                    <li class="comments__avatar-item comments__avatar-item--active">
+                        <img src="./img/content/avatar_one.png" alt="Мини аватар" class="comments__icon">
+                    </li>
+                    <li class="comments__avatar-item">
+                        <img src="./img/content/avatar_two.png" alt="Мини аватар" class="comments__icon">
+                    </li>
+                    <li class="comments__avatar-item">
+                        <img src="./img/content/avatar_three.png" alt="Мини аватар" class="comments__icon">
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <section class="section delivery" id="delivery">

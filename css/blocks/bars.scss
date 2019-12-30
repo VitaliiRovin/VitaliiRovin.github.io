@@ -261,6 +261,8 @@
     }
 }
 
-.bars__slider-icone--active {
-    filter: invert(0);
+.bars__slider--active {
+    .bars__slider-icone {
+        filter: invert(0.3);
+    }
 }

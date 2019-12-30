@@ -145,11 +145,9 @@
     }
 }
 
-.comments__avatar {
-    margin-bottom: rem(65px);
-}
-
 .comments__avatar-list {
+    margin-bottom: rem(65px);
+
     @include flex;
 }
 

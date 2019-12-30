@@ -28,20 +28,38 @@
 
 .menu__item {
     display: flex;
+
+    @include laptop {
+        overflow: hidden;
+    }
+
+    // visibility: visible;
+    // @include phones {
+    //     flex-shrink: 1;
+    // }
 }
 
 .menu__item--active {
     position: relative;
 
     @include laptop {
-        position: static;
+        flex-shrink: 0;
+        order: 1;
+        width: 100%;
     }
 
+    // @include laptop {
+    //     position: static;
+    // }
+
     .menu__desc {
-        width: 40vw;
+        width: 550px;
+        color: $white;
+        transition: width 0.4s, color 0.4s 0.35s;
 
         @include laptop {
-            width: calc(100% - 100px);
+            width: 100%;
+            transition: color 0.4s 0.35s;
         }
     }
 
@@ -62,21 +80,30 @@
     width: 0;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.7);
+    color: rgba($white, 0);
+    transition: width 0.4s;
+
+    @include laptop {
+        transition: none;
+    }
 
     p {
         font-size: rem(16px);
         font-weight: normal;
         line-height: 1.5;
-        color: $white;
-        padding: rem(50px) rem(20px);
+        padding: rem(50px) rem(60px) rem(60px) rem(50px);
     }
 }
 
 .menu__link {
-    display: block;
+    flex: none;
     width: rem(100px);
     background-color: black;
     position: relative;
+
+    @include phones {
+        width: rem(70px);
+    }
 
     h3 {
         position: absolute;

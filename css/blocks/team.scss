@@ -83,21 +83,23 @@
 
 .team__block {
     @include flex;
-
-    h3 {
-        margin-right: rem(3px);
-        font-size: rem(21px);
-        font-weight: 500;
-        color: $black-gray;
-        text-align: center;
-    }
 }
+
+.team__name {
+    margin-right: rem(3px);
+    font-size: rem(21px);
+    font-weight: 500;
+    color: $black-gray;
+    text-align: center;
+}
+
 
 .team__desc {
     font-size: rem(18px);
     text-align: center;
     height: 0;
     overflow: hidden;
+    transition: height 0.5s;
 
     h4 {
         font-weight: normal;
@@ -111,9 +113,10 @@
 }
 
 .team__item--active {
-    .team__desc {
-        height: auto;
-    }
+    // .team__desc {
+    //     max-height: 100%;
+    //     transition: max-height 2s;
+    // }
 
     .team__icone {
         transform: rotate(180deg);
