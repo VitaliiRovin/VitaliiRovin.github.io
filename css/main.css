@@ -1121,9 +1121,13 @@ button {
         margin-top: 1.25rem; } }
 
 .team__item {
+  min-height: 26.875rem;
   max-width: 13.75rem; }
   .team__item + .team__item {
     margin-left: 20px; }
+  @media screen and (max-width: 1010px) {
+    .team__item {
+      min-height: 0; } }
   @media screen and (max-width: 520px) {
     .team__item {
       max-width: 11.25rem;
@@ -1760,7 +1764,8 @@ button {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; } }
+      flex-direction: column;
+      position: relative; } }
 
 .bars__desc {
   margin-left: 4.0625rem;
@@ -1905,18 +1910,28 @@ button {
   display: flex;
   position: relative;
   margin-bottom: 1.875rem; }
+  @media screen and (max-width: 1010px) {
+    .bars__block-composition {
+      position: absolute;
+      top: 0;
+      right: 0; } }
 
 .bars__add-composition {
-  padding: 7% 7%;
   min-width: 16.875rem;
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 0.3125rem;
   position: absolute;
   left: 5.625rem;
   display: none; }
+  @media screen and (max-width: 1010px) {
+    .bars__add-composition {
+      left: -22.5rem; } }
 
 .bars__add-composition--active {
   display: block; }
+
+.bars__add-composition-list {
+  padding: 7%; }
 
 .bars__add-composition-item {
   margin-bottom: 0.9375rem;

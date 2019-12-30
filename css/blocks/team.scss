@@ -69,10 +69,15 @@
 }
 
 .team__item {
+    min-height: rem(430px);
     max-width: rem(220px);
 
     &+.team__item {
         margin-left: 20px;
+    }
+
+    @include laptop {
+        min-height: 0;
     }
 
     @include phones {

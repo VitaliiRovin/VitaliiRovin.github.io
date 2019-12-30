@@ -63,6 +63,7 @@
 
     @include laptop {
         flex-direction: column;
+        position: relative;
     }
 }
 
@@ -214,20 +215,33 @@
     display: flex;
     position: relative;
     margin-bottom: rem(30px);
+
+    @include laptop {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
 
 .bars__add-composition {
-    padding: 7% 7%;
     min-width: rem(270px);
     background-color: rgba($white, 0.95);
     border-radius: rem(5px);
     position: absolute;
     left: rem(90px);
     display: none;
+
+    @include laptop {
+        left: rem(-360px);
+    }
 }
 
 .bars__add-composition--active {
     display: block;
+}
+
+.bars__add-composition-list {
+    padding: 7%;
 }
 
 .bars__add-composition-item {

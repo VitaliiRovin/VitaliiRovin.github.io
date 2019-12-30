@@ -157,10 +157,8 @@
 
 
     //  секция выбора батончиков
-
-    //      выпадашка состав
-    let openingСomposition2 = () => {
-        var barsComp = document.querySelectorAll('.bars__composition'),
+    let openingСomposition = () => {
+        let barsComp = document.querySelectorAll('.bars__composition'),
             barsAdd = document.querySelectorAll('.bars__add-composition'),
             barsCompLen = barsComp.length,
             barsAddLen = barsAdd.length;
@@ -176,11 +174,7 @@
                 }
             })
         }
-    };
-    openingСomposition2();
 
-    //      слайдер батончиков
-    let slideBars2 = () => {
         let right = document.querySelector('#right'),
             left = document.querySelector('#left'),
             barsList = document.querySelector('.bars__list');
@@ -189,15 +183,25 @@
             barsList.style.right = '100%';
             right.classList.add('bars__slider--active');
             left.classList.remove('bars__slider--active');
+            for (let i = 0; i < barsAddLen; i++) {
+                if (barsAdd[i].classList.contains('bars__add-composition--active')) {
+                    barsAdd[i].classList.remove('bars__add-composition--active');
+                }
+            }
         });
 
         left.addEventListener('click', function (e) {
             barsList.style.right = '0';
             left.classList.add('bars__slider--active');
             right.classList.remove('bars__slider--active');
+            for (let i = 0; i < barsAddLen; i++) {
+                if (barsAdd[i].classList.contains('bars__add-composition--active')) {
+                    barsAdd[i].classList.remove('bars__add-composition--active');
+                }
+            }
         });
     };
-    slideBars2();
+    openingСomposition();
 
 })();
 
